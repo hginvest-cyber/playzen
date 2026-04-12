@@ -1,12 +1,9 @@
 /*
  * PlayZen — Games Data Layer
- * ----------------------------------------------------------------------------
  * Central catalog of games shown across the site.
  *
- * IMPORTANT — EMBED URLS / LEGAL POSITIONING:
- *   PlayZen does NOT claim ownership of any game. Games are embedded from
- *   third-party sources. All games listed here are either MIT-licensed,
- *   open-source, or offered for free embedding by their creators.
+ * All games are embedded from open-source or freely embeddable sources.
+ * PlayZen does not host or modify any game files.
  */
 
 const PLAYZEN_GAMES = [
@@ -17,8 +14,7 @@ const PLAYZEN_GAMES = [
     category: 'Puzzle',
     categorySlug: 'puzzle',
     shortDescription: 'Slide tiles, combine numbers, reach 2048.',
-    longDescription:
-      '2048 is a clean, minimal puzzle game where you combine matching number tiles by sliding them across a 4×4 grid. Every move spawns a new tile, and every merge doubles the value. Reach the 2048 tile to clear the classic challenge — then keep going to chase even higher scores.',
+    longDescription: '2048 is a clean, minimal puzzle game where you combine matching number tiles by sliding them across a 4×4 grid. Every move spawns a new tile, and every merge doubles the value.',
     thumbnail: 'assets/images/thumb-2048.png',
     thumbGradient: 'from-amber-500 via-orange-500 to-rose-500',
     embedUrl: 'https://gabrielecirulli.github.io/2048/',
@@ -34,11 +30,7 @@ const PLAYZEN_GAMES = [
       'Plan two moves ahead — every swipe creates a new tile somewhere.',
       'Don\'t chase quick merges; slow, structured play beats speed.'
     ],
-    isFeatured: true,
-    isTrending: true,
-    plays: 482300,
-    rating: 4.8,
-    hasPage: true,
+    isFeatured: true, isTrending: true, plays: 482300, rating: 4.8, hasPage: true,
     relatedGames: ['hextris', 'sudoku', 'tetris', 'chess']
   },
   {
@@ -48,8 +40,7 @@ const PLAYZEN_GAMES = [
     category: 'Puzzle',
     categorySlug: 'puzzle',
     shortDescription: 'A fast-paced hexagonal puzzle — rotate and match colors.',
-    longDescription:
-      'Hextris is a fast-paced puzzle game inspired by Tetris but played on a hexagonal grid. Colored blocks fly toward the center hexagon from all six sides. Rotate the hexagon to catch matching colors together and clear them before they stack too high. Simple to learn, impossible to put down.',
+    longDescription: 'Hextris is a fast-paced puzzle game played on a hexagonal grid. Colored blocks fly toward the center hexagon from all six sides. Rotate the hexagon to catch matching colors together and clear them.',
     thumbnail: 'assets/images/thumb-hextris.png',
     thumbGradient: 'from-emerald-500 via-teal-500 to-cyan-500',
     embedUrl: 'https://hextris.io/',
@@ -65,11 +56,7 @@ const PLAYZEN_GAMES = [
       'Watch the edges for incoming blocks, not the center.',
       'Speed increases over time, so build good habits early.'
     ],
-    isFeatured: true,
-    isTrending: true,
-    plays: 312000,
-    rating: 4.7,
-    hasPage: true,
+    isFeatured: true, isTrending: true, plays: 312000, rating: 4.7, hasPage: true,
     relatedGames: ['2048', 'tetris', 'sudoku', 'tower-stack']
   },
   {
@@ -79,8 +66,7 @@ const PLAYZEN_GAMES = [
     category: 'Arcade',
     categorySlug: 'arcade',
     shortDescription: 'Tap to fly. Dodge the pipes. Don\'t crash.',
-    longDescription:
-      'The legendary one-tap arcade game. Tap or click to flap your wings and navigate through gaps in the pipes. Sounds easy? The unforgiving physics and tight gaps will test your patience and reflexes. Every point feels earned in this brutally simple classic.',
+    longDescription: 'The legendary one-tap arcade game. Tap or click to flap your wings and navigate through gaps in the pipes. The unforgiving physics and tight gaps will test your patience and reflexes.',
     thumbnail: 'assets/images/thumb-flappy.png',
     thumbGradient: 'from-green-400 via-lime-500 to-yellow-500',
     embedUrl: 'https://nebez.github.io/floppybird/',
@@ -95,11 +81,7 @@ const PLAYZEN_GAMES = [
       'Stay in the center of gaps — don\'t hug the edges.',
       'The first five pipes are the hardest. Stay calm.'
     ],
-    isFeatured: true,
-    isTrending: true,
-    plays: 398000,
-    rating: 4.6,
-    hasPage: true,
+    isFeatured: true, isTrending: true, plays: 398000, rating: 4.6, hasPage: true,
     relatedGames: ['tower-stack', 'hextris', 'tetris', '2048']
   },
   {
@@ -109,8 +91,7 @@ const PLAYZEN_GAMES = [
     category: 'Puzzle',
     categorySlug: 'puzzle',
     shortDescription: 'The original block-stacking classic. Clear lines to survive.',
-    longDescription:
-      'The most iconic puzzle game ever made. Rotate and drop falling tetrominoes to complete horizontal lines. Cleared lines disappear, earning points and buying you more room. As the speed increases, every move counts. A timeless game that\'s just as addictive today as it was decades ago.',
+    longDescription: 'The most iconic puzzle game ever made. Rotate and drop falling tetrominoes to complete horizontal lines. As the speed increases, every move counts.',
     thumbnail: 'assets/images/thumb-tetris.png',
     thumbGradient: 'from-sky-500 via-blue-500 to-indigo-500',
     embedUrl: 'https://chvin.github.io/react-tetris/',
@@ -119,8 +100,7 @@ const PLAYZEN_GAMES = [
       { key: 'Left / Right Arrow', description: 'Move piece sideways' },
       { key: 'Up Arrow', description: 'Rotate piece' },
       { key: 'Down Arrow', description: 'Soft drop' },
-      { key: 'Space', description: 'Hard drop' },
-      { key: 'P', description: 'Pause' }
+      { key: 'Space', description: 'Hard drop' }
     ],
     tips: [
       'Keep the board flat — avoid building towers on one side.',
@@ -128,11 +108,7 @@ const PLAYZEN_GAMES = [
       'Play the piece preview — always plan one step ahead.',
       'Speed up soft drops to place pieces faster and buy time.'
     ],
-    isFeatured: true,
-    isTrending: true,
-    plays: 527000,
-    rating: 4.9,
-    hasPage: true,
+    isFeatured: true, isTrending: true, plays: 527000, rating: 4.9, hasPage: true,
     relatedGames: ['hextris', '2048', 'sudoku', 'tower-stack']
   },
   {
@@ -142,8 +118,7 @@ const PLAYZEN_GAMES = [
     category: 'Arcade',
     categorySlug: 'arcade',
     shortDescription: 'Stack blocks as high as you can without slipping.',
-    longDescription:
-      'Time your taps to stack moving blocks into a perfect tower. Miss the alignment and your tower shrinks. A perfect run feels incredible — a bad run is instantly over. Pure timing, zero fluff, maximum satisfaction.',
+    longDescription: 'Time your taps to stack moving blocks into a perfect tower. Miss the alignment and your tower shrinks. Pure timing, zero fluff, maximum satisfaction.',
     thumbnail: 'assets/images/thumb-towerstack.png',
     thumbGradient: 'from-pink-500 via-rose-500 to-red-500',
     embedUrl: 'https://iamkun.github.io/tower_game/',
@@ -158,11 +133,7 @@ const PLAYZEN_GAMES = [
       'Perfect stacks build momentum — aim for pixel-perfect alignment.',
       'Stay relaxed. Tension leads to mistimed taps.'
     ],
-    isFeatured: true,
-    isTrending: true,
-    plays: 245000,
-    rating: 4.5,
-    hasPage: true,
+    isFeatured: true, isTrending: true, plays: 245000, rating: 4.5, hasPage: true,
     relatedGames: ['flappy-bird', 'tetris', 'hextris', '2048']
   },
   {
@@ -172,8 +143,7 @@ const PLAYZEN_GAMES = [
     category: 'Strategy',
     categorySlug: 'strategy',
     shortDescription: 'The timeless strategy game. Play against the computer.',
-    longDescription:
-      'Play chess against an AI opponent right in your browser. Perfect for practicing openings, sharpening tactics, or just enjoying the world\'s greatest strategy game during a break. Multiple difficulty levels make it suitable for beginners and experienced players alike.',
+    longDescription: 'Play chess against an AI opponent right in your browser. Multiple difficulty levels make it suitable for beginners and experienced players alike.',
     thumbnail: 'assets/images/thumb-chess.png',
     thumbGradient: 'from-slate-400 via-zinc-500 to-stone-600',
     embedUrl: 'https://playpager.com/embed/chess/game/index.html',
@@ -188,11 +158,7 @@ const PLAYZEN_GAMES = [
       'Castle early to protect your king.',
       'Think about your opponent\'s threats before making your move.'
     ],
-    isFeatured: false,
-    isTrending: true,
-    plays: 189000,
-    rating: 4.7,
-    hasPage: true,
+    isFeatured: false, isTrending: true, plays: 189000, rating: 4.7, hasPage: true,
     relatedGames: ['sudoku', '2048', 'solitaire', 'hextris']
   },
   {
@@ -202,8 +168,7 @@ const PLAYZEN_GAMES = [
     category: 'Puzzle',
     categorySlug: 'puzzle',
     shortDescription: 'Fill the grid. Use logic. No math required.',
-    longDescription:
-      'The classic number-placement puzzle. Fill each row, column, and 3×3 box with the digits 1–9 without repeating. Multiple difficulty levels from beginner to advanced. A perfect brain exercise that rewards patience and logical thinking.',
+    longDescription: 'The classic number-placement puzzle. Fill each row, column, and 3×3 box with the digits 1–9 without repeating. Multiple difficulty levels from beginner to advanced.',
     thumbnail: 'assets/images/thumb-sudoku.png',
     thumbGradient: 'from-violet-500 via-purple-500 to-fuchsia-500',
     embedUrl: 'https://playpager.com/embed/sudoku/game/index.html',
@@ -219,11 +184,7 @@ const PLAYZEN_GAMES = [
       'Look for "naked singles" — cells where only one number can go.',
       'If you\'re stuck, scan for hidden pairs in rows and columns.'
     ],
-    isFeatured: false,
-    isTrending: true,
-    plays: 203000,
-    rating: 4.6,
-    hasPage: true,
+    isFeatured: false, isTrending: true, plays: 203000, rating: 4.6, hasPage: true,
     relatedGames: ['2048', 'chess', 'solitaire', 'hextris']
   },
   {
@@ -233,8 +194,7 @@ const PLAYZEN_GAMES = [
     category: 'Casual',
     categorySlug: 'casual',
     shortDescription: 'Classic card game. Sort, stack, and clear the board.',
-    longDescription:
-      'The timeless single-player card game. Move cards between columns, build foundation piles from Ace to King, and try to clear the entire board. Three difficulty modes and a built-in timer keep every session fresh. The perfect game for winding down.',
+    longDescription: 'The timeless single-player card game. Move cards between columns, build foundation piles from Ace to King, and try to clear the entire board.',
     thumbnail: 'assets/images/thumb-solitaire.png',
     thumbGradient: 'from-lime-500 via-green-500 to-emerald-600',
     embedUrl: 'https://playpager.com/embed/solitaire/game/index.html',
@@ -250,16 +210,11 @@ const PLAYZEN_GAMES = [
       'Keep columns balanced — don\'t empty a column without a King ready.',
       'Use the undo button sparingly to learn from mistakes.'
     ],
-    isFeatured: false,
-    isTrending: false,
-    plays: 167000,
-    rating: 4.4,
-    hasPage: true,
+    isFeatured: false, isTrending: false, plays: 167000, rating: 4.4, hasPage: true,
     relatedGames: ['chess', 'sudoku', '2048', 'tetris']
   }
 ];
 
-/* Categories used across the site */
 const PLAYZEN_CATEGORIES = [
   { slug: 'puzzle', name: 'Puzzle', description: 'Logic, numbers, and brain benders.', icon: '🧩', gradient: 'from-amber-500 to-rose-500' },
   { slug: 'arcade', name: 'Arcade', description: 'Pick up, play, chase the high score.', icon: '🕹️', gradient: 'from-indigo-500 to-fuchsia-500' },
@@ -267,6 +222,5 @@ const PLAYZEN_CATEGORIES = [
   { slug: 'casual', name: 'Casual', description: 'Low-pressure games for any mood.', icon: '🎈', gradient: 'from-pink-500 to-red-500' }
 ];
 
-/* Expose on window for vanilla scripts */
 window.PLAYZEN_GAMES = PLAYZEN_GAMES;
 window.PLAYZEN_CATEGORIES = PLAYZEN_CATEGORIES;
