@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Play 2048 Online for Free | PlayZen</title>
+  <meta name="description" content="Play 2048 online for free in your browser. Slide tiles, combine numbers, and reach the 2048 tile. No downloads — instant play on PlayZen." />
+  <link rel="canonical" href="https://www.playzen.live/games/2048.html" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Play 2048 Online for Free | PlayZen" />
+  <meta property="og:description" content="Slide tiles, combine numbers, reach 2048. Free browser puzzle game — no downloads." />
+  <meta property="og:url" content="https://www.playzen.live/games/2048.html" />
+  <meta property="og:image" content="https://www.playzen.live/assets/images/og-2048.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Play 2048 Online for Free | PlayZen" />
+  <meta name="twitter:description" content="Slide tiles, combine numbers, reach 2048. Free browser puzzle game." />
+  <meta name="theme-color" content="#0b1020" />
+  <meta name="robots" content="index,follow" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={darkMode:'class',theme:{extend:{fontFamily:{sans:['system-ui','-apple-system','Segoe UI','Roboto','Inter','sans-serif']}}}}</script>
+  <link rel="stylesheet" href="../assets/css/custom.css" />
+
+  <!-- Game page structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Play 2048 Online for Free",
+    "description": "Play 2048 online for free in your browser. Slide tiles, combine numbers, and reach the 2048 tile.",
+    "url": "https://www.playzen.live/games/2048.html",
+    "isPartOf": { "@type": "WebSite", "name": "PlayZen", "url": "https://www.playzen.live/" }
+  }
+  </script>
+</head>
+<body class="min-h-screen bg-slate-950 text-slate-100 antialiased" data-page="game" data-slug="2048">
+
+  <!-- HEADER -->
+  <header class="sticky top-0 z-30 border-b border-white/5 bg-slate-950/80 backdrop-blur-lg">
+    <div class="mx-auto flex max-w-7xl items-center gap-4 px-4 py-3 sm:px-6 lg:px-8">
+      <a href="../index.html" class="flex items-center gap-2"><span class="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-indigo-500 to-fuchsia-500 text-lg font-black">P</span><span class="text-lg font-bold tracking-tight">PlayZen</span></a>
+      <nav class="ml-6 hidden items-center gap-6 text-sm font-medium text-slate-300 md:flex"><a href="../index.html" class="hover:text-white">Home</a><a href="../trending.html" class="hover:text-white">Trending</a><a href="../categories.html" class="hover:text-white">Categories</a><a href="../favorites.html" class="hover:text-white">Favorites</a></nav>
+      <div class="relative ml-auto w-full max-w-sm">
+        <label class="sr-only" for="pz-search-game">Search games</label>
+        <div class="relative">
+          <svg class="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-500" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"/></svg>
+          <input id="pz-search-game" data-search-input type="search" placeholder="Search games…" autocomplete="off" class="w-full rounded-xl border border-white/5 bg-slate-900/80 py-2 pl-9 pr-3 text-sm text-white placeholder-slate-500 focus:border-indigo-400/60 focus:outline-none" />
+        </div>
+        <div data-search-results class="absolute left-0 right-0 top-[calc(100%+6px)] z-40 hidden max-h-[70vh] overflow-y-auto rounded-xl border border-white/5 bg-slate-900/95 shadow-2xl ring-1 ring-black/20 backdrop-blur"></div>
+      </div>
+      <button type="button" data-mobile-toggle aria-expanded="false" aria-label="Toggle navigation" class="ml-2 inline-flex h-10 w-10 items-center justify-center rounded-lg border border-white/10 text-slate-300 md:hidden"><svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 5h14a1 1 0 010 2H3a1 1 0 010-2zm0 4h14a1 1 0 010 2H3a1 1 0 010-2zm0 4h14a1 1 0 010 2H3a1 1 0 010-2z" clip-rule="evenodd"/></svg></button>
+    </div>
+    <nav data-mobile-menu class="hidden border-t border-white/5 bg-slate-950/95 md:hidden"><div class="flex flex-col gap-1 px-4 py-3 text-sm"><a href="../index.html" class="rounded-md px-3 py-2 hover:bg-white/5">Home</a><a href="../trending.html" class="rounded-md px-3 py-2 hover:bg-white/5">Trending</a><a href="../categories.html" class="rounded-md px-3 py-2 hover:bg-white/5">Categories</a><a href="../favorites.html" class="rounded-md px-3 py-2 hover:bg-white/5">Favorites</a><a href="../continue-playing.html" class="rounded-md px-3 py-2 hover:bg-white/5">Continue Playing</a></div></nav>
+  </header>
+
+  <main class="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
+
+    <!-- Breadcrumb -->
+    <nav class="mb-6 text-sm text-slate-400" aria-label="Breadcrumb">
+      <a href="../index.html" class="hover:text-white">Home</a>
+      <span class="mx-1">/</span>
+      <a href="../categories.html?cat=puzzle" class="hover:text-white">Puzzle</a>
+      <span class="mx-1">/</span>
+      <span class="text-white">2048</span>
+    </nav>
+
+    <!-- AD — top leaderboard -->
+    <!-- REPLACE with AdSense leaderboard unit -->
+    <div class="mb-8 ad-placeholder ad-placeholder--leaderboard">Advertisement · 728×90</div>
+
+    <div class="grid gap-8 lg:grid-cols-[1fr_300px]">
+      <div class="space-y-10">
+
+        <!-- Title + Favorite -->
+        <div class="flex flex-wrap items-center gap-4">
+          <h1 class="text-3xl font-black tracking-tight sm:text-4xl">Play 2048 Online</h1>
+          <button type="button" data-page-fav class="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-4 py-2 text-sm font-semibold text-white transition hover:bg-white/10" aria-label="Add to favorites" aria-pressed="false"></button>
+        </div>
+        <p class="max-w-2xl text-slate-400">Free, instant, no downloads. Slide tiles and merge numbers to reach 2048.</p>
+
+        <!-- GAME EMBED -->
+        <div class="game-embed ring-1 ring-white/5">
+          <!-- 2048 by Gabriele Cirulli — MIT licensed, hosted on his GitHub Pages -->
+          <iframe
+            data-game-iframe
+            src="https://gabrielecirulli.github.io/2048/"
+            title="Play 2048 — free browser puzzle game"
+            loading="lazy"
+            sandbox="allow-scripts allow-same-origin allow-popups"
+            allowfullscreen
+          ></iframe>
+
+          <!-- Fallback if embed doesn't load -->
+          <div data-game-fallback class="hidden absolute inset-0 flex flex-col items-center justify-center gap-4 bg-slate-950/95 text-center">
+            <div class="text-4xl">🎮</div>
+            <h2 class="text-xl font-bold text-white">Game embed not loaded</h2>
+            <p class="max-w-sm text-sm text-slate-400">The game embed URL needs to be configured. You can play the original version at the link below.</p>
+            <a href="https://play2048.co/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-xl bg-indigo-500 px-5 py-3 text-sm font-semibold text-white hover:bg-indigo-400">
+              Open Original Game
+              <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"/><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Disclaimer -->
+        <div class="rounded-xl border border-white/10 bg-white/5 p-4 text-xs text-slate-400">
+          <strong class="text-slate-300">Disclaimer:</strong> This game is embedded from a third-party source and remains the intellectual property of its original creator. PlayZen does not host or modify game files. If you are the rights holder and have concerns, please visit our <a href="../dmca.html" class="text-indigo-400 hover:text-indigo-300">DMCA / Copyright page</a>.
+        </div>
+
+        <!-- AD — below game -->
+        <!-- REPLACE with AdSense in-content unit -->
+        <div class="ad-placeholder ad-placeholder--rectangle">Advertisement · Below game</div>
+
+        <!-- GAME DESCRIPTION (SEO content) -->
+        <section>
+          <h2 class="text-2xl font-bold tracking-tight">What Is 2048?</h2>
+          <div class="prose prose-invert prose-sm mt-3 max-w-none text-slate-300 space-y-4">
+            <p>
+              2048 is a single-player sliding tile puzzle game that became one of the most popular browser games in the world after its release in 2014. The concept is deceptively simple: you have a 4x4 grid, and tiles with numbers appear after every move. Slide all tiles in one direction, and any two tiles with the same number that collide will merge into a single tile with their combined value. The goal is to create a tile with the number 2048.
+            </p>
+            <p>
+              What makes 2048 so compelling is its blend of simplicity and depth. Anyone can understand the rules in seconds, but reaching 2048 consistently requires forward planning, spatial reasoning, and patience. The best players develop strategies around corner-locking their highest tile and building chains of descending values along the edges of the board.
+            </p>
+            <p>
+              2048 is perfect for short sessions — a single game can take anywhere from one to ten minutes depending on your pace. It runs entirely in your browser, requires no downloads, and works on desktop and mobile devices. Whether you're warming up your brain in the morning or killing time between tasks, 2048 is one of those games that stays satisfying no matter how many times you play it.
+            </p>
+          </div>
+        </section>
+
+        <!-- CONTROLS -->
+        <section>
+          <h2 class="text-xl font-bold tracking-tight">Controls</h2>
+          <div class="mt-3 overflow-hidden rounded-xl border border-white/5">
+            <table class="w-full text-sm">
+              <thead><tr class="border-b border-white/5 bg-white/5"><th class="px-4 py-2 text-left font-semibold text-white">Key</th><th class="px-4 py-2 text-left font-semibold text-white">Action</th></tr></thead>
+              <tbody class="text-slate-300">
+                <tr class="border-b border-white/5"><td class="px-4 py-2"><kbd class="rounded bg-slate-800 px-2 py-0.5 text-xs font-mono">Arrow Keys</kbd></td><td class="px-4 py-2">Slide tiles up, down, left, or right</td></tr>
+                <tr class="border-b border-white/5"><td class="px-4 py-2"><kbd class="rounded bg-slate-800 px-2 py-0.5 text-xs font-mono">W A S D</kbd></td><td class="px-4 py-2">Alternative movement controls</td></tr>
+                <tr><td class="px-4 py-2"><kbd class="rounded bg-slate-800 px-2 py-0.5 text-xs font-mono">Swipe</kbd></td><td class="px-4 py-2">On touch devices, swipe in any direction</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- TIPS -->
+        <section>
+          <h2 class="text-xl font-bold tracking-tight">Tips & Strategy</h2>
+          <ul class="mt-3 list-disc space-y-2 pl-5 text-sm text-slate-300">
+            <li>Keep your highest tile locked into one corner and build around it.</li>
+            <li>Avoid moves that scatter your largest tiles across the board.</li>
+            <li>Plan two moves ahead — every swipe creates a new tile somewhere.</li>
+            <li>Don't chase quick merges; slow, structured play beats speed every time.</li>
+          </ul>
+        </section>
+
+        <!-- FAQ (SEO-friendly) -->
+        <section>
+          <h2 class="text-xl font-bold tracking-tight">Frequently Asked Questions</h2>
+          <div class="mt-3 space-y-4">
+            <details class="group rounded-xl border border-white/5 bg-white/5 open:bg-white/[0.07]">
+              <summary class="cursor-pointer px-5 py-3 text-sm font-semibold text-white">Is 2048 free to play?</summary>
+              <p class="px-5 pb-4 text-sm text-slate-400">Yes. 2048 is completely free to play in your browser with no downloads or signups required.</p>
+            </details>
+            <details class="group rounded-xl border border-white/5 bg-white/5 open:bg-white/[0.07]">
+              <summary class="cursor-pointer px-5 py-3 text-sm font-semibold text-white">Can I play 2048 on my phone?</summary>
+              <p class="px-5 pb-4 text-sm text-slate-400">Yes. 2048 works on mobile devices — just swipe in the direction you want the tiles to move.</p>
+            </details>
+            <details class="group rounded-xl border border-white/5 bg-white/5 open:bg-white/[0.07]">
+              <summary class="cursor-pointer px-5 py-3 text-sm font-semibold text-white">What happens after I reach 2048?</summary>
+              <p class="px-5 pb-4 text-sm text-slate-400">You can keep playing past 2048 to chase even higher tiles like 4096, 8192, and beyond. There's no hard limit.</p>
+            </details>
+          </div>
+        </section>
+      </div>
+
+      <!-- SIDEBAR -->
+      <aside class="space-y-6 lg:pt-16">
+        <!-- AD — sidebar -->
+        <!-- REPLACE with AdSense sidebar rectangle unit -->
+        <div class="ad-placeholder ad-placeholder--rectangle hidden lg:flex">Advertisement · Sidebar</div>
+
+        <!-- Game info card -->
+        <div class="rounded-xl border border-white/5 bg-slate-900/60 p-4 space-y-3">
+          <h3 class="font-semibold text-white">Game Info</h3>
+          <div class="flex justify-between text-sm"><span class="text-slate-400">Category</span><a href="../categories.html?cat=puzzle" class="text-indigo-400 hover:text-indigo-300">Puzzle</a></div>
+          <div class="flex justify-between text-sm"><span class="text-slate-400">Rating</span><span class="text-white">4.8 / 5</span></div>
+          <div class="flex justify-between text-sm"><span class="text-slate-400">Plays</span><span class="text-white">482K+</span></div>
+          <div class="flex justify-between text-sm"><span class="text-slate-400">Platform</span><span class="text-white">Browser</span></div>
+          <div class="flex justify-between text-sm"><span class="text-slate-400">Price</span><span class="text-emerald-400">Free</span></div>
+        </div>
+
+        <!-- More games in this category link -->
+        <a href="../categories.html?cat=puzzle" class="block rounded-xl border border-white/5 bg-white/5 p-4 text-center text-sm font-semibold text-indigo-400 hover:bg-white/10 hover:text-indigo-300">Browse more Puzzle games →</a>
+      </aside>
+    </div>
+
+    <!-- RELATED GAMES -->
+    <section class="mt-14">
+      <h2 class="mb-5 text-2xl font-bold tracking-tight">You Might Also Like</h2>
+      <div data-grid="related" class="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4"></div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-white/5 bg-slate-950"><div class="mx-auto grid max-w-7xl grid-cols-2 gap-8 px-4 py-12 sm:px-6 md:grid-cols-4 lg:px-8"><div class="col-span-2"><div class="flex items-center gap-2"><span class="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-indigo-500 to-fuchsia-500 font-black">P</span><span class="text-lg font-bold">PlayZen</span></div><p class="mt-3 max-w-sm text-sm text-slate-400">Free browser games. No downloads. Just play.</p></div><div><h3 class="text-sm font-semibold text-white">Explore</h3><ul class="mt-3 space-y-2 text-sm text-slate-400"><li><a href="../trending.html" class="hover:text-white">Trending</a></li><li><a href="../categories.html" class="hover:text-white">Categories</a></li><li><a href="../favorites.html" class="hover:text-white">Favorites</a></li></ul></div><div><h3 class="text-sm font-semibold text-white">Legal & Info</h3><ul class="mt-3 space-y-2 text-sm text-slate-400"><li><a href="../about.html" class="hover:text-white">About</a></li><li><a href="../contact.html" class="hover:text-white">Contact</a></li><li><a href="../privacy.html" class="hover:text-white">Privacy Policy</a></li><li><a href="../terms.html" class="hover:text-white">Terms of Use</a></li><li><a href="../dmca.html" class="hover:text-white">DMCA / Copyright</a></li></ul></div></div><div class="border-t border-white/5"><div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 px-4 py-6 text-xs text-slate-500 sm:flex-row sm:px-6 lg:px-8"><p>© <span data-year></span> PlayZen. Games are property of their respective owners.</p><p>Made for casual players. Family-friendly. Ad-supported.</p></div></div></footer>
+
+  <!-- Sticky mobile ad -->
+  <div class="ad-placeholder ad-placeholder--sticky md:hidden">Advertisement</div>
+
+  <script src="../assets/data/games.js"></script>
+  <script src="../assets/js/storage.js"></script>
+  <script src="../assets/js/search.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/game-page.js"></script>
+</body>
+</html>
