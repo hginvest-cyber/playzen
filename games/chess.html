@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Play Slope Online for Free | PlayZen</title>
-  <meta name="description" content="Play Slope online for free — a fast 3D endless runner where you steer a ball down a neon slope. No downloads, instant play on PlayZen." />
-  <link rel="canonical" href="https://www.playzen.live/games/slope.html" />
+  <title>Play Chess Online for Free | PlayZen</title>
+  <meta name="description" content="Play Chess online for free against the computer. Multiple difficulty levels. No downloads — instant play on PlayZen." />
+  <link rel="canonical" href="https://www.playzen.live/games/chess.html" />
 
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Play Slope Online for Free | PlayZen" />
-  <meta property="og:description" content="Steer a ball down a neon 3D slope. Free endless runner — no downloads." />
-  <meta property="og:url" content="https://www.playzen.live/games/slope.html" />
-  <meta property="og:image" content="https://www.playzen.live/assets/images/og-slope.png" />
+  <meta property="og:title" content="Play Chess Online for Free | PlayZen" />
+  <meta property="og:description" content="Play Chess online for free against the computer. Multiple difficulty levels. No downloads — instant play on PlayZen." />
+  <meta property="og:url" content="https://www.playzen.live/games/chess.html" />
+  <meta property="og:image" content="https://www.playzen.live/assets/images/og-chess.png" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Play Slope Online for Free | PlayZen" />
-  <meta name="twitter:description" content="Steer a ball down a neon 3D slope. Free endless runner." />
+  <meta name="twitter:title" content="Play Chess Online for Free | PlayZen" />
+  <meta name="twitter:description" content="Play Chess online for free against the computer. Multiple difficulty levels." />
   <meta name="theme-color" content="#0b1020" />
   <meta name="robots" content="index,follow" />
 
@@ -22,18 +22,26 @@
   <script>tailwind.config={darkMode:'class',theme:{extend:{fontFamily:{sans:['system-ui','-apple-system','Segoe UI','Roboto','Inter','sans-serif']}}}}</script>
   <link rel="stylesheet" href="../assets/css/custom.css" />
 
+  <!-- Game page structured data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Play Slope Online for Free",
-    "description": "Play Slope online for free — a fast 3D endless runner in your browser.",
-    "url": "https://www.playzen.live/games/slope.html",
-    "isPartOf": { "@type": "WebSite", "name": "PlayZen", "url": "https://www.playzen.live/" }
+    "name": "Play Chess Online for Free",
+    "description": "Play Chess online for free against the computer. Multiple difficulty levels. No downloads — instant play on PlayZen.",
+    "url": "https://www.playzen.live/games/chess.html",
+    "isPartOf": { "@type": "WebSite", "name": "PlayZen", "url": "https://www.playzen.live/" },
+    "about": {
+      "@type": "Game",
+      "name": "Chess",
+      "description": "Chess is a two-player strategy board game played on an 8×8 grid. Players move pieces with the goal of checkmating the opponent's king.",
+      "genre": "Strategy",
+      "gamePlatform": "Browser"
+    }
   }
   </script>
 </head>
-<body class="min-h-screen bg-slate-950 text-slate-100 antialiased" data-page="game" data-slug="slope">
+<body class="min-h-screen bg-slate-950 text-slate-100 antialiased" data-page="game" data-slug="chess">
 
   <!-- HEADER -->
   <header class="sticky top-0 z-30 border-b border-white/5 bg-slate-950/80 backdrop-blur-lg">
@@ -55,61 +63,73 @@
 
   <main class="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
 
+    <!-- Breadcrumb -->
     <nav class="mb-6 text-sm text-slate-400" aria-label="Breadcrumb">
-      <a href="../index.html" class="hover:text-white">Home</a><span class="mx-1">/</span>
-      <a href="../categories.html?cat=endless-runner" class="hover:text-white">Endless Runner</a><span class="mx-1">/</span>
-      <span class="text-white">Slope</span>
+      <a href="../index.html" class="hover:text-white">Home</a>
+      <span class="mx-1">/</span>
+      <a href="../categories.html?cat=strategy" class="hover:text-white">Strategy</a>
+      <span class="mx-1">/</span>
+      <span class="text-white">Chess</span>
     </nav>
 
     <!-- AD — top leaderboard -->
+    <!-- REPLACE with AdSense leaderboard unit -->
     <div class="mb-8 ad-placeholder ad-placeholder--leaderboard">Advertisement · 728×90</div>
 
     <div class="grid gap-8 lg:grid-cols-[1fr_300px]">
       <div class="space-y-10">
 
+        <!-- Title + Favorite -->
         <div class="flex flex-wrap items-center gap-4">
-          <h1 class="text-3xl font-black tracking-tight sm:text-4xl">Play Slope Online</h1>
+          <h1 class="text-3xl font-black tracking-tight sm:text-4xl">Play Chess Online</h1>
           <button type="button" data-page-fav class="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-4 py-2 text-sm font-semibold text-white transition hover:bg-white/10" aria-label="Add to favorites" aria-pressed="false"></button>
         </div>
-        <p class="max-w-2xl text-slate-400">A neon-lit 3D endless runner. Dodge obstacles, stay on the track, chase your high score.</p>
+        <p class="max-w-2xl text-slate-400">The world's greatest strategy game. Play against the computer for free.</p>
 
         <!-- GAME EMBED -->
         <div class="game-embed ring-1 ring-white/5">
-          <!-- Replace this iframe src with an officially licensed or authorized embed URL -->
           <iframe
             data-game-iframe
-            src="about:blank"
-            title="Play Slope — free browser endless runner"
+            src="https://playpager.com/embed/chess/game/index.html"
+            title="Play Chess — free browser strategy game"
             loading="lazy"
             sandbox="allow-scripts allow-same-origin allow-popups"
             allowfullscreen
           ></iframe>
+
+          <!-- Fallback if embed doesn't load -->
           <div data-game-fallback class="hidden absolute inset-0 flex flex-col items-center justify-center gap-4 bg-slate-950/95 text-center">
             <div class="text-4xl">🎮</div>
             <h2 class="text-xl font-bold text-white">Game embed not loaded</h2>
-            <p class="max-w-sm text-sm text-slate-400">The game embed URL needs to be configured. Check back soon or browse other games below.</p>
-            <a href="../index.html" class="inline-flex items-center gap-2 rounded-xl bg-indigo-500 px-5 py-3 text-sm font-semibold text-white hover:bg-indigo-400">Browse Games</a>
+            <p class="max-w-sm text-sm text-slate-400">The game embed URL needs to be configured. You can play the original version at the link below.</p>
+            <a href="https://playpager.com/embed/chess/game/index.html" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-xl bg-indigo-500 px-5 py-3 text-sm font-semibold text-white hover:bg-indigo-400">
+              Open Original Game
+              <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"/><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"/></svg>
+            </a>
           </div>
         </div>
 
+        <!-- Disclaimer -->
         <div class="rounded-xl border border-white/10 bg-white/5 p-4 text-xs text-slate-400">
           <strong class="text-slate-300">Disclaimer:</strong> This game is embedded from a third-party source and remains the intellectual property of its original creator. PlayZen does not host or modify game files. If you are the rights holder and have concerns, please visit our <a href="../dmca.html" class="text-indigo-400 hover:text-indigo-300">DMCA / Copyright page</a>.
         </div>
 
+        <!-- AD — below game -->
+        <!-- REPLACE with AdSense in-content unit -->
         <div class="ad-placeholder ad-placeholder--rectangle">Advertisement · Below game</div>
 
-        <!-- DESCRIPTION -->
+        <!-- GAME DESCRIPTION (SEO content) -->
         <section>
-          <h2 class="text-2xl font-bold tracking-tight">What Is Slope?</h2>
+          <h2 class="text-2xl font-bold tracking-tight">What Is Chess?</h2>
           <div class="prose prose-invert prose-sm mt-3 max-w-none text-slate-300 space-y-4">
             <p>
-              Slope is a 3D endless runner that drops you onto a steep, neon-colored track and dares you to survive as long as possible. You control a ball rolling at ever-increasing speed, steering left and right to avoid red obstacles, gaps in the floor, and sharp turns that appear with very little warning. There are no levels to beat — just an infinite run with a score counter that tracks how far you've made it.
+              Chess is a two-player strategy board game played on an 8×8 grid, with each player commanding 16 pieces: a king, a queen, two rooks, two knights, two bishops, and eight pawns. The objective is to checkmate the opponent's king — placing it under attack with no legal escape. Originating over 1,500 years ago in India, chess has evolved into the world's most studied and celebrated strategy game, with a rich tradition spanning centuries of grandmasters, tournaments, and theory.
             </p>
             <p>
-              The game's appeal is pure reflex. Slope starts manageable, but within thirty seconds the speed ramps up to a point where your muscle memory is doing all the work. It's the kind of game where a "quick run" turns into twenty runs because you keep thinking you can beat your last score by just a few more meters. The minimal neon visual style keeps distractions low and the focus on the track ahead.
+              What makes chess endlessly compelling is its combination of tactical sharpness and long-term strategic depth. Every game is unique: openings branch into dozens of named systems, middlegames demand calculation and pattern recognition, and endgames require precise technique. Playing against a computer opponent gives you a consistent, adjustable challenge — perfect for learning fundamentals, testing opening lines, or simply sharpening your instincts without pressure.
             </p>
             <p>
-              Slope runs entirely in your browser and requires no downloads or plugins. It works on both desktop and mobile, though desktop controls tend to give you slightly more precision. If you enjoy reaction-based games where speed and timing are everything, Slope is one of the best free options available online.
+              Chess runs entirely in your browser with no downloads required and plays smoothly on both desktop and mobile. Whether you're a complete beginner learning how the pieces move or an experienced player looking to practice specific positions, this free online chess game lets you jump in instantly and play at your own pace. It's one of the few games where every session teaches you something new.
             </p>
           </div>
         </section>
@@ -121,9 +141,8 @@
             <table class="w-full text-sm">
               <thead><tr class="border-b border-white/5 bg-white/5"><th class="px-4 py-2 text-left font-semibold text-white">Key</th><th class="px-4 py-2 text-left font-semibold text-white">Action</th></tr></thead>
               <tbody class="text-slate-300">
-                <tr class="border-b border-white/5"><td class="px-4 py-2"><kbd class="rounded bg-slate-800 px-2 py-0.5 text-xs font-mono">A / Left Arrow</kbd></td><td class="px-4 py-2">Steer left</td></tr>
-                <tr class="border-b border-white/5"><td class="px-4 py-2"><kbd class="rounded bg-slate-800 px-2 py-0.5 text-xs font-mono">D / Right Arrow</kbd></td><td class="px-4 py-2">Steer right</td></tr>
-                <tr><td class="px-4 py-2"><kbd class="rounded bg-slate-800 px-2 py-0.5 text-xs font-mono">Touch</kbd></td><td class="px-4 py-2">Tilt / tap left and right on mobile</td></tr>
+                <tr class="border-b border-white/5"><td class="px-4 py-2"><kbd class="rounded bg-slate-800 px-2 py-0.5 text-xs font-mono">Click / Tap</kbd></td><td class="px-4 py-2">Select and move pieces</td></tr>
+                <tr><td class="px-4 py-2"><kbd class="rounded bg-slate-800 px-2 py-0.5 text-xs font-mono">Drag</kbd></td><td class="px-4 py-2">Drag pieces to their destination square</td></tr>
               </tbody>
             </table>
           </div>
@@ -133,28 +152,28 @@
         <section>
           <h2 class="text-xl font-bold tracking-tight">Tips & Strategy</h2>
           <ul class="mt-3 list-disc space-y-2 pl-5 text-sm text-slate-300">
-            <li>Stay near the center early — it gives you more reaction room when speed ramps up.</li>
-            <li>Small, frequent corrections beat big panic swerves.</li>
-            <li>Watch the horizon ahead of the ball, not the ball itself.</li>
-            <li>Don't fight the speed — lean into it and anticipate obstacles before they arrive.</li>
+            <li>Control the center — pieces placed in or near the center squares have more reach and power.</li>
+            <li>Develop your pieces early — get your knights and bishops off the back rank before launching attacks.</li>
+            <li>Castle early to protect your king and connect your rooks for coordination.</li>
+            <li>Think about your opponent's threats before making your move — avoiding blunders is more important than finding brilliant moves.</li>
           </ul>
         </section>
 
-        <!-- FAQ -->
+        <!-- FAQ (SEO-friendly) -->
         <section>
           <h2 class="text-xl font-bold tracking-tight">Frequently Asked Questions</h2>
           <div class="mt-3 space-y-4">
             <details class="group rounded-xl border border-white/5 bg-white/5 open:bg-white/[0.07]">
-              <summary class="cursor-pointer px-5 py-3 text-sm font-semibold text-white">Is Slope free?</summary>
-              <p class="px-5 pb-4 text-sm text-slate-400">Yes. Slope is completely free to play in your browser — no accounts, no downloads.</p>
+              <summary class="cursor-pointer px-5 py-3 text-sm font-semibold text-white">Is Chess free to play?</summary>
+              <p class="px-5 pb-4 text-sm text-slate-400">Yes. Chess is completely free to play in your browser with no downloads or signups required.</p>
             </details>
             <details class="group rounded-xl border border-white/5 bg-white/5 open:bg-white/[0.07]">
-              <summary class="cursor-pointer px-5 py-3 text-sm font-semibold text-white">Does Slope have an ending?</summary>
-              <p class="px-5 pb-4 text-sm text-slate-400">No. Slope is an endless runner — the track goes on forever and gets faster the longer you survive.</p>
+              <summary class="cursor-pointer px-5 py-3 text-sm font-semibold text-white">Can I choose the difficulty level?</summary>
+              <p class="px-5 pb-4 text-sm text-slate-400">Yes. The game offers multiple difficulty levels so you can play against an easy computer opponent as a beginner or crank up the challenge as your skills improve.</p>
             </details>
             <details class="group rounded-xl border border-white/5 bg-white/5 open:bg-white/[0.07]">
-              <summary class="cursor-pointer px-5 py-3 text-sm font-semibold text-white">Can I play Slope on mobile?</summary>
-              <p class="px-5 pb-4 text-sm text-slate-400">Yes, Slope works on mobile browsers. Desktop provides slightly more precise steering, but mobile works well for casual runs.</p>
+              <summary class="cursor-pointer px-5 py-3 text-sm font-semibold text-white">Can I play Chess on my phone or tablet?</summary>
+              <p class="px-5 pb-4 text-sm text-slate-400">Yes. Chess works on mobile devices — tap to select a piece and tap again to move it, or drag pieces directly to the destination square on a touchscreen.</p>
             </details>
           </div>
         </section>
@@ -162,20 +181,26 @@
 
       <!-- SIDEBAR -->
       <aside class="space-y-6 lg:pt-16">
+        <!-- AD — sidebar -->
+        <!-- REPLACE with AdSense sidebar rectangle unit -->
         <div class="ad-placeholder ad-placeholder--rectangle hidden lg:flex">Advertisement · Sidebar</div>
+
+        <!-- Game info card -->
         <div class="rounded-xl border border-white/5 bg-slate-900/60 p-4 space-y-3">
           <h3 class="font-semibold text-white">Game Info</h3>
-          <div class="flex justify-between text-sm"><span class="text-slate-400">Category</span><a href="../categories.html?cat=endless-runner" class="text-indigo-400 hover:text-indigo-300">Endless Runner</a></div>
+          <div class="flex justify-between text-sm"><span class="text-slate-400">Category</span><a href="../categories.html?cat=strategy" class="text-indigo-400 hover:text-indigo-300">Strategy</a></div>
           <div class="flex justify-between text-sm"><span class="text-slate-400">Rating</span><span class="text-white">4.7 / 5</span></div>
-          <div class="flex justify-between text-sm"><span class="text-slate-400">Plays</span><span class="text-white">391K+</span></div>
+          <div class="flex justify-between text-sm"><span class="text-slate-400">Plays</span><span class="text-white">189K+</span></div>
           <div class="flex justify-between text-sm"><span class="text-slate-400">Platform</span><span class="text-white">Browser</span></div>
           <div class="flex justify-between text-sm"><span class="text-slate-400">Price</span><span class="text-emerald-400">Free</span></div>
         </div>
-        <a href="../categories.html?cat=endless-runner" class="block rounded-xl border border-white/5 bg-white/5 p-4 text-center text-sm font-semibold text-indigo-400 hover:bg-white/10 hover:text-indigo-300">Browse more Endless Runner games →</a>
+
+        <!-- More games in this category link -->
+        <a href="../categories.html?cat=strategy" class="block rounded-xl border border-white/5 bg-white/5 p-4 text-center text-sm font-semibold text-indigo-400 hover:bg-white/10 hover:text-indigo-300">Browse more Strategy games →</a>
       </aside>
     </div>
 
-    <!-- RELATED -->
+    <!-- RELATED GAMES -->
     <section class="mt-14">
       <h2 class="mb-5 text-2xl font-bold tracking-tight">You Might Also Like</h2>
       <div data-grid="related" class="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4"></div>
@@ -185,6 +210,7 @@
   <!-- FOOTER -->
   <footer class="border-t border-white/5 bg-slate-950"><div class="mx-auto grid max-w-7xl grid-cols-2 gap-8 px-4 py-12 sm:px-6 md:grid-cols-4 lg:px-8"><div class="col-span-2"><div class="flex items-center gap-2"><span class="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-indigo-500 to-fuchsia-500 font-black">P</span><span class="text-lg font-bold">PlayZen</span></div><p class="mt-3 max-w-sm text-sm text-slate-400">Free browser games. No downloads. Just play.</p></div><div><h3 class="text-sm font-semibold text-white">Explore</h3><ul class="mt-3 space-y-2 text-sm text-slate-400"><li><a href="../trending.html" class="hover:text-white">Trending</a></li><li><a href="../categories.html" class="hover:text-white">Categories</a></li><li><a href="../favorites.html" class="hover:text-white">Favorites</a></li></ul></div><div><h3 class="text-sm font-semibold text-white">Legal & Info</h3><ul class="mt-3 space-y-2 text-sm text-slate-400"><li><a href="../about.html" class="hover:text-white">About</a></li><li><a href="../contact.html" class="hover:text-white">Contact</a></li><li><a href="../privacy.html" class="hover:text-white">Privacy Policy</a></li><li><a href="../terms.html" class="hover:text-white">Terms of Use</a></li><li><a href="../dmca.html" class="hover:text-white">DMCA / Copyright</a></li></ul></div></div><div class="border-t border-white/5"><div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 px-4 py-6 text-xs text-slate-500 sm:flex-row sm:px-6 lg:px-8"><p>© <span data-year></span> PlayZen. Games are property of their respective owners.</p><p>Made for casual players. Family-friendly. Ad-supported.</p></div></div></footer>
 
+  <!-- Sticky mobile ad -->
   <div class="ad-placeholder ad-placeholder--sticky md:hidden">Advertisement</div>
 
   <script src="../assets/data/games.js"></script>
