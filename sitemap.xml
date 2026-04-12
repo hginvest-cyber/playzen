@@ -13,10 +13,44 @@
   <!-- Game pages -->
   <url><loc>https://www.playzen.live/games/2048.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://www.playzen.live/games/hextris.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.playzen.live/games/flappy-bird.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://www.playzen.live/games/tetris.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.playzen.live/games/tower-stack.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.playzen.live/games/chess.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://www.playzen.live/games/sudoku.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.playzen.live/games/memory-match.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.playzen.live/games/wordle.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.playzen.live/games/word-puzzle.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.playzen.live/games/cubes.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.playzen.live/games/minesweeper.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.playzen.live/games/sokoban.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.playzen.live/games/astray.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.playzen.live/games/match-3.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.playzen.live/games/2048-tetris.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.playzen.live/games/maze.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.playzen.live/games/css-sweeper.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.playzen.live/games/flappy-bird.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.playzen.live/games/tower-stack.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.playzen.live/games/snake.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.playzen.live/games/pac-man.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.playzen.live/games/space-invaders.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.playzen.live/games/clumsy-bird.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.playzen.live/games/ski-free.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.playzen.live/games/table-tennis.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.playzen.live/games/alien-invasion.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.playzen.live/games/emberwind.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.playzen.live/games/brick-breaker.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.playzen.live/games/duck-hunt.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.playzen.live/games/retro-snake.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.playzen.live/games/chess.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.playzen.live/games/connect-four.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.playzen.live/games/checkers.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.playzen.live/games/reversi.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.playzen.live/games/tic-tac-toe.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.playzen.live/games/a-dark-room.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.playzen.live/games/tower-defense.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.playzen.live/games/untrusted.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://www.playzen.live/games/solitaire.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.playzen.live/games/cookie-clicker.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.playzen.live/games/rhythm-game.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.playzen.live/games/word-guess.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.playzen.live/games/piano.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.playzen.live/games/github-games.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
 </urlset>
