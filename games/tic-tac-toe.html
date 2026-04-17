@@ -36,6 +36,12 @@
 </head>
 <body class="min-h-screen bg-slate-950 text-slate-100 antialiased" data-page="game" data-slug="tic-tac-toe">
 
+  <!-- Fullscreen exit overlay button (visible only when fullscreen) -->
+  <button type="button" id="fullscreen-exit-btn" class="pz-fullscreen-exit" aria-label="Exit fullscreen">
+    <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 9V4.5M9 9H4.5M9 9L3.75 3.75M9 15v4.5M9 15H4.5M9 15l-5.25 5.25M15 9h4.5M15 9V4.5M15 9l5.25-5.25M15 15h4.5M15 15v4.5m0-4.5l5.25 5.25"/></svg>
+    Exit Fullscreen
+  </button>
+
   <!-- HEADER -->
   <header class="sticky top-0 z-30 border-b border-white/5 bg-slate-950/80 backdrop-blur-lg">
     <div class="mx-auto flex max-w-7xl items-center gap-4 px-4 py-3 sm:px-6 lg:px-8">
@@ -102,30 +108,41 @@
           </div>
         </div>
 
-        <!-- Fullscreen script -->
         <script>
-          document.getElementById('fullscreen-btn').addEventListener('click', function() {
-            var container = document.getElementById('game-container');
-            if (document.fullscreenElement) {
-              document.exitFullscreen();
-            } else if (container.requestFullscreen) {
-              container.requestFullscreen();
-            } else if (container.webkitRequestFullscreen) {
-              container.webkitRequestFullscreen();
-            } else if (container.msRequestFullscreen) {
-              container.msRequestFullscreen();
-            }
-          });
-          document.addEventListener('fullscreenchange', function() {
+          (function() {
             var btn = document.getElementById('fullscreen-btn');
+            var exitBtn = document.getElementById('fullscreen-exit-btn');
             var container = document.getElementById('game-container');
-            if (document.fullscreenElement) {
+            var isFs = false;
+
+            function enterFullscreen() {
+              isFs = true;
+              container.classList.add('pz-fullscreen');
+              exitBtn.classList.add('pz-visible');
+              document.body.classList.add('pz-no-scroll');
               btn.innerHTML = '<svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 9V4.5M9 9H4.5M9 9L3.75 3.75M9 15v4.5M9 15H4.5M9 15l-5.25 5.25M15 9h4.5M15 9V4.5M15 9l5.25-5.25M15 15h4.5M15 15v4.5m0-4.5l5.25 5.25"/></svg> Exit Fullscreen';
-              container.style.background = '#0b1020';
-            } else {
+            }
+
+            function exitFullscreen() {
+              isFs = false;
+              container.classList.remove('pz-fullscreen');
+              exitBtn.classList.remove('pz-visible');
+              document.body.classList.remove('pz-no-scroll');
               btn.innerHTML = '<svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9m11.25-5.25v4.5m0-4.5h-4.5m4.5 0L15 9m-11.25 11.25v-4.5m0 4.5h4.5m-4.5 0L9 15m11.25 5.25v-4.5m0 4.5h-4.5m4.5 0L15 15"/></svg> Fullscreen';
             }
-          });
+
+            function toggleFullscreen() {
+              if (isFs) { exitFullscreen(); } else { enterFullscreen(); }
+            }
+
+            btn.addEventListener('click', toggleFullscreen);
+            exitBtn.addEventListener('click', toggleFullscreen);
+
+            // Also exit on Escape key
+            document.addEventListener('keydown', function(e) {
+              if (e.key === 'Escape' && isFs) { exitFullscreen(); }
+            });
+          })();
         </script>
 
         <!-- Disclaimer -->
