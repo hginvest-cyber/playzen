@@ -9,29 +9,6 @@
 const PLAYZEN_GAMES = [
   /* ─── PUZZLE ───────────────────────────────────────────── */
   {
-    id: 'pz-2048', slug: '2048', title: '2048',
-    category: 'Puzzle', categorySlug: 'puzzle',
-    shortDescription: 'Slide tiles, combine numbers, reach 2048.',
-    longDescription: '2048 is a clean, minimal puzzle game where you combine matching number tiles by sliding them across a 4\u00d74 grid. Every move spawns a new tile, and every merge doubles the value.',
-    thumbnail: 'assets/images/thumb-2048.png',
-    thumbGradient: 'from-amber-500 via-orange-500 to-rose-500',
-    embedUrl: 'https://gabrielecirulli.github.io/2048/',
-    externalUrl: 'https://play2048.co/',
-    controls: [
-      { key: 'Arrow Keys', description: 'Slide tiles up, down, left, or right' },
-      { key: 'W A S D', description: 'Alternative movement controls' },
-      { key: 'Swipe', description: 'On touch devices, swipe in any direction' }
-    ],
-    tips: [
-      'Keep your highest tile locked into one corner and build around it.',
-      'Avoid moves that scatter your largest tiles.',
-      'Plan two moves ahead \u2014 every swipe creates a new tile somewhere.',
-      'Don\'t chase quick merges; slow, structured play beats speed.'
-    ],
-    isFeatured: true, isTrending: true, plays: 482300, rating: 4.8, hasPage: true,
-    relatedGames: ['hextris', 'sudoku', 'tetris', '2048-tetris']
-  },
-  {
     id: 'pz-hextris', slug: 'hextris', title: 'Hextris',
     category: 'Puzzle', categorySlug: 'puzzle',
     shortDescription: 'A fast-paced hexagonal puzzle \u2014 rotate and match colors.',
@@ -52,7 +29,7 @@ const PLAYZEN_GAMES = [
       'Speed increases over time, so build good habits early.'
     ],
     isFeatured: true, isTrending: true, plays: 312000, rating: 4.7, hasPage: true,
-    relatedGames: ['2048', 'tetris', 'match-3', 'cubes']
+    relatedGames: ['slope', 'tetris', 'match-3', 'cubes']
   },
   {
     id: 'pz-tetris', slug: 'tetris', title: 'Tetris',
@@ -76,7 +53,7 @@ const PLAYZEN_GAMES = [
       'Speed up soft drops to place pieces faster and buy time.'
     ],
     isFeatured: true, isTrending: true, plays: 527000, rating: 4.9, hasPage: true,
-    relatedGames: ['hextris', '2048', '2048-tetris', 'brick-breaker']
+    relatedGames: ['hextris', 'slope', '2048-tetris', 'brick-breaker']
   },
   {
     id: 'pz-sudoku', slug: 'sudoku', title: 'Sudoku',
@@ -99,7 +76,7 @@ const PLAYZEN_GAMES = [
       'If you\'re stuck, scan for hidden pairs in rows and columns.'
     ],
     isFeatured: false, isTrending: true, plays: 203000, rating: 4.6, hasPage: true,
-    relatedGames: ['2048', 'minesweeper', 'wordle', 'sokoban']
+    relatedGames: ['slope', 'minesweeper', 'wordle', 'sokoban']
   },
   {
     id: 'pz-memory', slug: 'memory-match', title: 'Memory Match',
@@ -120,7 +97,7 @@ const PLAYZEN_GAMES = [
       'Take your time \u2014 accuracy matters more than speed.'
     ],
     isFeatured: true, isTrending: true, plays: 175000, rating: 4.5, hasPage: true,
-    relatedGames: ['minesweeper', '2048', 'match-3', 'sudoku']
+    relatedGames: ['minesweeper', 'slope', 'match-3', 'sudoku']
   },
   {
     id: 'pz-wordle', slug: 'wordle', title: 'Wordle',
@@ -186,7 +163,7 @@ const PLAYZEN_GAMES = [
       'Work from the top down to let gravity create new matches.'
     ],
     isFeatured: false, isTrending: false, plays: 98000, rating: 4.2, hasPage: true,
-    relatedGames: ['match-3', '2048', 'hextris', 'tetris']
+    relatedGames: ['match-3', 'slope', 'hextris', 'tetris']
   },
   {
     id: 'pz-minesweeper', slug: 'minesweeper', title: 'Minesweeper',
@@ -208,7 +185,7 @@ const PLAYZEN_GAMES = [
       'Use the "1-2" pattern at borders to deduce mine positions.'
     ],
     isFeatured: true, isTrending: true, plays: 267000, rating: 4.7, hasPage: true,
-    relatedGames: ['sudoku', '2048', 'sokoban', 'memory-match']
+    relatedGames: ['sudoku', 'slope', 'sokoban', 'memory-match']
   },
   {
     id: 'pz-sokoban', slug: 'sokoban', title: 'Sokoban',
@@ -231,7 +208,7 @@ const PLAYZEN_GAMES = [
       'Use undo liberally \u2014 experimentation is key to solving harder levels.'
     ],
     isFeatured: false, isTrending: true, plays: 145000, rating: 4.5, hasPage: true,
-    relatedGames: ['astray', 'maze', 'sudoku', '2048']
+    relatedGames: ['astray', 'maze', 'sudoku', 'slope']
   },
   {
     id: 'pz-astray', slug: 'astray', title: 'Astray',
@@ -253,7 +230,7 @@ const PLAYZEN_GAMES = [
       'Gentle taps work better than holding keys down.'
     ],
     isFeatured: true, isTrending: false, plays: 89000, rating: 4.4, hasPage: true,
-    relatedGames: ['maze', 'sokoban', '2048', 'hextris']
+    relatedGames: ['maze', 'sokoban', 'slope', 'hextris']
   },
   {
     id: 'pz-match3', slug: 'match-3', title: 'Match 3',
@@ -275,7 +252,7 @@ const PLAYZEN_GAMES = [
       'Combos multiply your score, so set up cascading matches.'
     ],
     isFeatured: false, isTrending: true, plays: 156000, rating: 4.4, hasPage: true,
-    relatedGames: ['cubes', 'hextris', '2048', 'tetris']
+    relatedGames: ['cubes', 'hextris', 'slope', 'tetris']
   },
   {
     id: 'pz-2048tetris', slug: '2048-tetris', title: '2048 Tetris',
@@ -299,7 +276,7 @@ const PLAYZEN_GAMES = [
       'The 2048 merge mechanic makes planning ahead even more important.'
     ],
     isFeatured: true, isTrending: false, plays: 78000, rating: 4.3, hasPage: true,
-    relatedGames: ['2048', 'tetris', 'hextris', 'cubes']
+    relatedGames: ['slope', 'tetris', 'hextris', 'cubes']
   },
   {
     id: 'pz-maze', slug: 'maze', title: 'Maze Game',
@@ -341,7 +318,7 @@ const PLAYZEN_GAMES = [
       'This version has no flag feature \u2014 rely on mental notes.'
     ],
     isFeatured: false, isTrending: false, plays: 45000, rating: 4.0, hasPage: true,
-    relatedGames: ['minesweeper', 'sudoku', 'sokoban', '2048']
+    relatedGames: ['minesweeper', 'sudoku', 'sokoban', 'slope']
   },
 
   /* ─── ARCADE ───────────────────────────────────────────── */
@@ -387,7 +364,7 @@ const PLAYZEN_GAMES = [
       'Stay relaxed. Tension leads to mistimed taps.'
     ],
     isFeatured: true, isTrending: true, plays: 245000, rating: 4.5, hasPage: true,
-    relatedGames: ['flappy-bird', 'tetris', 'brick-breaker', '2048']
+    relatedGames: ['flappy-bird', 'tetris', 'brick-breaker', 'slope']
   },
   {
     id: 'pz-snake', slug: 'snake', title: 'Snake',
@@ -936,6 +913,332 @@ const PLAYZEN_GAMES = [
     ],
     isFeatured: false, isTrending: false, plays: 45000, rating: 4.1, hasPage: true,
     relatedGames: ['snake', 'brick-breaker', 'pac-man', 'retro-snake']
+  },
+
+  /* ─── NEW POPULAR GAMES ────────────────────────────────── */
+  {
+    id: 'pz-slope', slug: 'slope', title: 'Slope',
+    category: 'Arcade', categorySlug: 'arcade',
+    shortDescription: 'Race a ball down a never-ending slope at breakneck speed.',
+    longDescription: 'Slope is an addictive 3D endless runner where you control a ball rolling down a steep, neon-lit slope. Dodge obstacles, navigate sharp turns, and try to survive as long as possible while the speed keeps increasing.',
+    thumbnail: 'assets/images/thumb-slope.png',
+    thumbGradient: 'from-green-400 via-emerald-500 to-teal-600',
+    embedUrl: 'https://slopegameio.github.io/',
+    externalUrl: 'https://slopegameio.github.io/',
+    controls: [
+      { key: 'Left / Right Arrow', description: 'Steer the ball left and right' },
+      { key: 'A / D', description: 'Alternative steering' }
+    ],
+    tips: [
+      'Stay near the center of the slope for more reaction time.',
+      'Make small, gentle movements \u2014 overcorrecting is the #1 cause of death.',
+      'Watch far ahead, not directly at your ball.',
+      'Red blocks are instant death \u2014 learn their patterns.'
+    ],
+    isFeatured: true, isTrending: true, plays: 890000, rating: 4.8, hasPage: true,
+    relatedGames: ['ski-free', 'flappy-bird', 'dino-runner', 'tower-stack']
+  },
+  {
+    id: 'pz-bubbleshooter', slug: 'bubble-shooter', title: 'Bubble Shooter',
+    category: 'Puzzle', categorySlug: 'puzzle',
+    shortDescription: 'Aim, shoot, and pop matching bubbles.',
+    longDescription: 'The classic bubble-popping puzzle game. Aim and shoot colored bubbles to create groups of three or more matching colors. Clear the board before the bubbles reach the bottom. A perfect blend of aim and strategy.',
+    thumbnail: 'assets/images/thumb-bubbleshooter.png',
+    thumbGradient: 'from-blue-400 via-purple-500 to-pink-500',
+    embedUrl: 'https://cdn.htmlgames.com/BubbleShooter/',
+    externalUrl: 'https://cdn.htmlgames.com/BubbleShooter/',
+    controls: [
+      { key: 'Mouse / Tap', description: 'Aim and shoot bubbles' }
+    ],
+    tips: [
+      'Aim for the top \u2014 clearing bubbles high up causes chain reactions below.',
+      'Use the walls to bank shots into hard-to-reach spots.',
+      'Match colors strategically, not just the easiest available shot.',
+      'Clear the sides first to prevent the bubble ceiling from lowering.'
+    ],
+    isFeatured: true, isTrending: true, plays: 756000, rating: 4.7, hasPage: true,
+    relatedGames: ['match-3', 'cubes', 'tetris', 'block-puzzle']
+  },
+  {
+    id: 'pz-dinorunner', slug: 'dino-runner', title: 'Dino Runner',
+    category: 'Arcade', categorySlug: 'arcade',
+    shortDescription: 'The famous dinosaur endless runner. Jump and duck to survive.',
+    longDescription: 'The legendary offline dinosaur game, now playable anytime. Guide your T-Rex through a desert landscape, jumping over cacti and ducking under pterodactyls. The speed increases the longer you survive.',
+    thumbnail: 'assets/images/thumb-dinorunner.png',
+    thumbGradient: 'from-slate-400 via-gray-500 to-slate-600',
+    embedUrl: 'https://dinorunner.com/',
+    externalUrl: 'https://dinorunner.com/',
+    controls: [
+      { key: 'Space / Up Arrow', description: 'Jump' },
+      { key: 'Down Arrow', description: 'Duck' }
+    ],
+    tips: [
+      'Time your jumps right before the cactus \u2014 jumping too early is worse than too late.',
+      'Duck for pterodactyls flying at head height.',
+      'The game speeds up gradually \u2014 stay focused as your reactions need to get faster.',
+      'Short hops work better than big jumps for closely spaced obstacles.'
+    ],
+    isFeatured: true, isTrending: true, plays: 920000, rating: 4.9, hasPage: true,
+    relatedGames: ['slope', 'flappy-bird', 'ski-free', 'snake']
+  },
+  {
+    id: 'pz-mahjong', slug: 'mahjong', title: 'Mahjong Solitaire',
+    category: 'Puzzle', categorySlug: 'puzzle',
+    shortDescription: 'Match pairs of tiles to clear the board.',
+    longDescription: 'The classic tile-matching solitaire game. Find and match pairs of identical tiles that are free (not blocked by other tiles). Clear all tiles from the board to win. Relaxing yet challenging.',
+    thumbnail: 'assets/images/thumb-mahjong.png',
+    thumbGradient: 'from-red-600 via-amber-600 to-yellow-600',
+    embedUrl: 'https://cdn.htmlgames.com/MahjongSolitaire/',
+    externalUrl: 'https://cdn.htmlgames.com/MahjongSolitaire/',
+    controls: [
+      { key: 'Click / Tap', description: 'Select a tile' }
+    ],
+    tips: [
+      'A tile is "free" only if it has no tile on top and at least one open side.',
+      'Work from the top layers down \u2014 freeing upper tiles opens more options.',
+      'Don\'t just grab the first match you see \u2014 plan which matches open new paths.',
+      'Use the hint button sparingly to learn where hidden matches are.'
+    ],
+    isFeatured: true, isTrending: true, plays: 534000, rating: 4.7, hasPage: true,
+    relatedGames: ['solitaire', 'spider-solitaire', 'memory-match', 'sudoku']
+  },
+  {
+    id: 'pz-spidersolitaire', slug: 'spider-solitaire', title: 'Spider Solitaire',
+    category: 'Casual', categorySlug: 'casual',
+    shortDescription: 'Build sequences from King to Ace in this card classic.',
+    longDescription: 'Spider Solitaire is a challenging card game where you arrange cards in descending order from King to Ace in the same suit. Complete sequences are removed from the board. Play with 1, 2, or 4 suits for varying difficulty.',
+    thumbnail: 'assets/images/thumb-spidersolitaire.png',
+    thumbGradient: 'from-slate-600 via-purple-700 to-slate-800',
+    embedUrl: 'https://cdn.htmlgames.com/SpiderSolitaire/',
+    externalUrl: 'https://cdn.htmlgames.com/SpiderSolitaire/',
+    controls: [
+      { key: 'Click / Drag', description: 'Move cards between columns' },
+      { key: 'Double-click', description: 'Auto-move when possible' }
+    ],
+    tips: [
+      'Try to empty columns \u2014 they give you critical maneuvering space.',
+      'Build in-suit sequences whenever possible, even if it means skipping easier moves.',
+      'Deal new cards from the stock only when you have no good moves left.',
+      'In 2-suit mode, focus on one suit at a time if you can.'
+    ],
+    isFeatured: false, isTrending: true, plays: 345000, rating: 4.5, hasPage: true,
+    relatedGames: ['solitaire', 'freecell', 'mahjong', 'pyramid-solitaire']
+  },
+  {
+    id: 'pz-freecell', slug: 'freecell', title: 'FreeCell',
+    category: 'Casual', categorySlug: 'casual',
+    shortDescription: 'A strategic solitaire where nearly every deal is winnable.',
+    longDescription: 'FreeCell is a solitaire card game where all cards are dealt face-up, so every game is about pure strategy. Use four free cells as temporary storage to move cards around and build foundation piles from Ace to King.',
+    thumbnail: 'assets/images/thumb-freecell.png',
+    thumbGradient: 'from-green-600 via-emerald-700 to-teal-700',
+    embedUrl: 'https://cdn.htmlgames.com/FreeCell/',
+    externalUrl: 'https://cdn.htmlgames.com/FreeCell/',
+    controls: [
+      { key: 'Click / Drag', description: 'Move cards' },
+      { key: 'Double-click', description: 'Auto-move to foundation' }
+    ],
+    tips: [
+      'Keep free cells empty as long as possible \u2014 they are your most valuable resource.',
+      'Plan several moves ahead before committing to a sequence.',
+      'Empty columns are even more powerful than free cells.',
+      'Try to uncover and move Aces and Twos to foundations early.'
+    ],
+    isFeatured: false, isTrending: true, plays: 278000, rating: 4.5, hasPage: true,
+    relatedGames: ['solitaire', 'spider-solitaire', 'pyramid-solitaire', 'mahjong']
+  },
+  {
+    id: 'pz-pyramidsolitaire', slug: 'pyramid-solitaire', title: 'Pyramid Solitaire',
+    category: 'Casual', categorySlug: 'casual',
+    shortDescription: 'Pair cards that add up to 13 to clear the pyramid.',
+    longDescription: 'In Pyramid Solitaire, cards are dealt in a pyramid shape. Remove pairs of exposed cards that add up to 13 (e.g., Queen + Ace, 10 + 3). Kings are removed alone. Clear the entire pyramid to win.',
+    thumbnail: 'assets/images/thumb-pyramidsolitaire.png',
+    thumbGradient: 'from-amber-600 via-yellow-600 to-orange-600',
+    embedUrl: 'https://cdn.htmlgames.com/PyramidSolitaire/',
+    externalUrl: 'https://cdn.htmlgames.com/PyramidSolitaire/',
+    controls: [
+      { key: 'Click / Tap', description: 'Select cards to pair' }
+    ],
+    tips: [
+      'Kings can be removed alone since they equal 13.',
+      'Focus on removing cards from the top of the pyramid first to expose more options.',
+      'Don\'t waste pairs from the draw pile if they open pyramid matches.',
+      'Count your remaining pairs \u2014 if a key card is buried, plan around it.'
+    ],
+    isFeatured: false, isTrending: false, plays: 189000, rating: 4.3, hasPage: true,
+    relatedGames: ['solitaire', 'spider-solitaire', 'freecell', 'mahjong']
+  },
+  {
+    id: 'pz-crossword', slug: 'crossword', title: 'Daily Crossword',
+    category: 'Puzzle', categorySlug: 'puzzle',
+    shortDescription: 'A fresh crossword puzzle every day.',
+    longDescription: 'Challenge yourself with a new crossword puzzle daily. Fill in the grid by solving clues across and down. A classic word game that tests your vocabulary and lateral thinking.',
+    thumbnail: 'assets/images/thumb-crossword.png',
+    thumbGradient: 'from-slate-400 via-slate-500 to-slate-600',
+    embedUrl: 'https://cdn.htmlgames.com/DailyCrossword/',
+    externalUrl: 'https://cdn.htmlgames.com/DailyCrossword/',
+    controls: [
+      { key: 'Click / Tap', description: 'Select a cell' },
+      { key: 'Keyboard', description: 'Type a letter' },
+      { key: 'Tab / Arrow', description: 'Move to next cell' }
+    ],
+    tips: [
+      'Start with the clues you are confident about to fill in crossing letters.',
+      'Short words (3-4 letters) often have common answers \u2014 learn the repeaters.',
+      'Read clues carefully \u2014 question marks mean wordplay is involved.',
+      'Fill in common letter patterns first (THE, ING, TION, etc.).'
+    ],
+    isFeatured: false, isTrending: true, plays: 234000, rating: 4.6, hasPage: true,
+    relatedGames: ['wordle', 'word-puzzle', 'nonogram', 'sudoku']
+  },
+  {
+    id: 'pz-nonogram', slug: 'nonogram', title: 'Nonogram',
+    category: 'Puzzle', categorySlug: 'puzzle',
+    shortDescription: 'Solve picture logic puzzles by filling in grid cells.',
+    longDescription: 'Nonograms (also called Picross) are picture logic puzzles where you fill in cells on a grid based on number clues. The numbers tell you how many consecutive filled cells exist in each row or column. Complete the puzzle to reveal a hidden picture.',
+    thumbnail: 'assets/images/thumb-nonogram.png',
+    thumbGradient: 'from-indigo-500 via-blue-500 to-sky-500',
+    embedUrl: 'https://cdn.htmlgames.com/Nonogram/',
+    externalUrl: 'https://cdn.htmlgames.com/Nonogram/',
+    controls: [
+      { key: 'Click / Tap', description: 'Fill in a cell' },
+      { key: 'Right-click', description: 'Mark cell as empty' }
+    ],
+    tips: [
+      'Start with the largest numbers \u2014 they constrain the most cells.',
+      'Look for rows or columns where the clues fill most of the line.',
+      'Use elimination: mark cells that are definitely empty with an X.',
+      'Overlapping logic is your best tool \u2014 if a clue must cover certain cells in every possibility, those cells are guaranteed.'
+    ],
+    isFeatured: false, isTrending: false, plays: 123000, rating: 4.5, hasPage: true,
+    relatedGames: ['sudoku', 'crossword', 'minesweeper', 'sokoban']
+  },
+  {
+    id: 'pz-minigolf', slug: 'mini-golf', title: 'Mini Golf',
+    category: 'Casual', categorySlug: 'casual',
+    shortDescription: 'Putt your way through tricky mini golf courses.',
+    longDescription: 'A fun mini golf game with creative course designs. Aim your shot, set the power, and putt the ball into the hole. Navigate obstacles, ramps, and tricky angles across multiple holes.',
+    thumbnail: 'assets/images/thumb-minigolf.png',
+    thumbGradient: 'from-green-400 via-lime-500 to-emerald-500',
+    embedUrl: 'https://cdn.htmlgames.com/MiniGolf/',
+    externalUrl: 'https://cdn.htmlgames.com/MiniGolf/',
+    controls: [
+      { key: 'Click + Drag', description: 'Aim and set power' },
+      { key: 'Release', description: 'Take the shot' }
+    ],
+    tips: [
+      'Use the walls to bank shots around corners.',
+      'Lighter shots give you more control near the hole.',
+      'Study the course layout before your first shot.',
+      'Sometimes the indirect path is easier than a straight shot.'
+    ],
+    isFeatured: false, isTrending: true, plays: 198000, rating: 4.4, hasPage: true,
+    relatedGames: ['bowling', 'table-tennis', 'pinball', 'solitaire']
+  },
+  {
+    id: 'pz-bowling', slug: 'bowling', title: 'Bowling',
+    category: 'Casual', categorySlug: 'casual',
+    shortDescription: 'Roll strikes and spares in this bowling game.',
+    longDescription: 'Step up to the lane and bowl for the perfect game. Aim your ball, set the spin, and try to knock down all ten pins. Realistic physics and multiple difficulty levels make every frame exciting.',
+    thumbnail: 'assets/images/thumb-bowling.png',
+    thumbGradient: 'from-red-500 via-white to-blue-500',
+    embedUrl: 'https://cdn.htmlgames.com/Bowling/',
+    externalUrl: 'https://cdn.htmlgames.com/Bowling/',
+    controls: [
+      { key: 'Click / Drag', description: 'Aim and release the ball' }
+    ],
+    tips: [
+      'Aim slightly off-center for the best chance at a strike.',
+      'Use spin to curve the ball into the pocket between the 1 and 3 pins.',
+      'Adjust your starting position for spare pickups.',
+      'Consistency is key \u2014 find a line that works and repeat it.'
+    ],
+    isFeatured: false, isTrending: false, plays: 145000, rating: 4.2, hasPage: true,
+    relatedGames: ['mini-golf', 'table-tennis', 'pinball', 'dino-runner']
+  },
+  {
+    id: 'pz-blockpuzzle', slug: 'block-puzzle', title: 'Block Puzzle',
+    category: 'Puzzle', categorySlug: 'puzzle',
+    shortDescription: 'Fit blocks together to clear rows and columns.',
+    longDescription: 'A relaxing yet challenging block-fitting puzzle. Place different shaped blocks on the grid to complete rows and columns, which then clear for points. No time pressure \u2014 just pure spatial reasoning.',
+    thumbnail: 'assets/images/thumb-blockpuzzle.png',
+    thumbGradient: 'from-purple-500 via-violet-500 to-indigo-500',
+    embedUrl: 'https://cdn.htmlgames.com/BlockPuzzle/',
+    externalUrl: 'https://cdn.htmlgames.com/BlockPuzzle/',
+    controls: [
+      { key: 'Click + Drag', description: 'Place blocks on the grid' }
+    ],
+    tips: [
+      'Keep the board balanced \u2014 don\'t pile blocks on one side.',
+      'Clear lines in both directions to maximize points.',
+      'Plan for the next set of blocks, not just the current one.',
+      'Leave room for the larger blocks that come later.'
+    ],
+    isFeatured: false, isTrending: true, plays: 267000, rating: 4.5, hasPage: true,
+    relatedGames: ['tetris', 'cubes', 'match-3', 'sudoku']
+  },
+  {
+    id: 'pz-pinball', slug: 'pinball', title: 'Pinball',
+    category: 'Arcade', categorySlug: 'arcade',
+    shortDescription: 'Classic pinball action in your browser.',
+    longDescription: 'A polished browser pinball machine with flippers, bumpers, ramps, and multipliers. Launch the ball and keep it in play using the flippers. Hit targets and complete combos for massive scores.',
+    thumbnail: 'assets/images/thumb-pinball.png',
+    thumbGradient: 'from-yellow-500 via-red-500 to-purple-500',
+    embedUrl: 'https://cdn.htmlgames.com/Pinball/',
+    externalUrl: 'https://cdn.htmlgames.com/Pinball/',
+    controls: [
+      { key: 'Left / Right Arrow', description: 'Activate left / right flipper' },
+      { key: 'Space', description: 'Launch ball' }
+    ],
+    tips: [
+      'Catch the ball on a flipper by holding it up \u2014 then aim your shot.',
+      'Aim for the ramps and lit targets to build multipliers.',
+      'Don\'t mash both flippers \u2014 use the one closest to the ball.',
+      'Learn the drain paths and which flipper saves each one.'
+    ],
+    isFeatured: false, isTrending: true, plays: 234000, rating: 4.5, hasPage: true,
+    relatedGames: ['brick-breaker', 'table-tennis', 'bowling', 'slope']
+  },
+  {
+    id: 'pz-hangman', slug: 'hangman', title: 'Hangman',
+    category: 'Casual', categorySlug: 'casual',
+    shortDescription: 'Guess letters to reveal the hidden word.',
+    longDescription: 'The classic word-guessing game. A word is hidden and you guess one letter at a time. Each wrong guess adds a body part to the hangman. Guess the word before the drawing is complete!',
+    thumbnail: 'assets/images/thumb-hangman.png',
+    thumbGradient: 'from-stone-400 via-slate-500 to-stone-600',
+    embedUrl: 'https://cdn.htmlgames.com/Hangman/',
+    externalUrl: 'https://cdn.htmlgames.com/Hangman/',
+    controls: [
+      { key: 'Click / Keyboard', description: 'Guess a letter' }
+    ],
+    tips: [
+      'Start with the most common vowels: E, A, I, O.',
+      'Then try frequent consonants: T, N, S, R, L.',
+      'Look at the word length and revealed letters for pattern clues.',
+      'Save rare letters (Q, X, Z, J) for last \u2014 they rarely appear.'
+    ],
+    isFeatured: false, isTrending: false, plays: 167000, rating: 4.2, hasPage: true,
+    relatedGames: ['word-guess', 'wordle', 'crossword', 'word-puzzle']
+  },
+  {
+    id: 'pz-dotsandboxes', slug: 'dots-and-boxes', title: 'Dots and Boxes',
+    category: 'Strategy', categorySlug: 'strategy',
+    shortDescription: 'Connect dots, complete boxes, outsmart your opponent.',
+    longDescription: 'The classic pen-and-paper strategy game. Take turns drawing lines between dots. When you complete the fourth side of a box, you score a point and go again. The player with the most boxes wins.',
+    thumbnail: 'assets/images/thumb-dotsboxes.png',
+    thumbGradient: 'from-blue-400 via-cyan-400 to-teal-400',
+    embedUrl: 'https://cdn.htmlgames.com/DotsAndBoxes/',
+    externalUrl: 'https://cdn.htmlgames.com/DotsAndBoxes/',
+    controls: [
+      { key: 'Click / Tap', description: 'Draw a line between two dots' }
+    ],
+    tips: [
+      'Avoid completing the third side of a box \u2014 it hands a point to your opponent.',
+      'Force your opponent to open up chains of boxes you can capture.',
+      'Control the endgame by managing how chains are opened.',
+      'Sacrifice a small chain early to gain control of larger chains later.'
+    ],
+    isFeatured: false, isTrending: false, plays: 89000, rating: 4.3, hasPage: true,
+    relatedGames: ['tic-tac-toe', 'connect-four', 'checkers', 'chess']
   }
 ];
 

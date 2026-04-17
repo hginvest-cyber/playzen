@@ -21,6 +21,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <script>tailwind.config={darkMode:'class',theme:{extend:{fontFamily:{sans:['system-ui','-apple-system','Segoe UI','Roboto','Inter','sans-serif']}}}}</script>
   <link rel="stylesheet" href="../assets/css/custom.css" />
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2844527705842952" crossorigin="anonymous"></script>
 
   <script type="application/ld+json">
   {
@@ -32,7 +33,6 @@
     "isPartOf": { "@type": "WebSite", "name": "PlayZen", "url": "https://www.playzen.live/" }
   }
   </script>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2844527705842952" crossorigin="anonymous"></script>
 </head>
 <body class="min-h-screen bg-slate-950 text-slate-100 antialiased" data-page="game" data-slug="word-puzzle">
 
@@ -66,21 +66,26 @@
     </nav>
 
     <!-- AD — top leaderboard -->
-    <div class="mb-8 ad-placeholder ad-placeholder--leaderboard">Advertisement · 728×90</div>
+    <div class="mb-8 flex justify-center"><ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-2844527705842952" data-ad-slot="leaderboard-top"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>
 
     <div class="grid gap-8 lg:grid-cols-[1fr_300px]">
       <div class="space-y-10">
 
-        <!-- Title + Favorite -->
+        <!-- Title + Favorite + Fullscreen -->
         <div class="flex flex-wrap items-center gap-4">
           <h1 class="text-3xl font-black tracking-tight sm:text-4xl">Play Word Puzzle Online</h1>
           <button type="button" data-page-fav class="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-4 py-2 text-sm font-semibold text-white transition hover:bg-white/10" aria-label="Add to favorites" aria-pressed="false"></button>
+          <button type="button" id="fullscreen-btn" class="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-4 py-2 text-sm font-semibold text-white transition hover:bg-white/10" aria-label="Toggle fullscreen">
+            <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9m11.25-5.25v4.5m0-4.5h-4.5m4.5 0L15 9m-11.25 11.25v-4.5m0 4.5h4.5m-4.5 0L9 15m11.25 5.25v-4.5m0 4.5h-4.5m4.5 0L15 15"/></svg>
+            Fullscreen
+          </button>
         </div>
         <p class="max-w-2xl text-slate-400">Find hidden words in a grid of letters. Free, instant, no downloads.</p>
 
         <!-- GAME EMBED -->
-        <div class="game-embed ring-1 ring-white/5">
+        <div id="game-container" class="game-embed ring-1 ring-white/5">
           <iframe
+            id="game-iframe"
             data-game-iframe
             src="https://playpager.com/embed/wordpuzzle/game/index.html"
             title="Play Word Puzzle — free browser game"
@@ -100,13 +105,39 @@
           </div>
         </div>
 
+        <!-- Fullscreen script -->
+        <script>
+          document.getElementById('fullscreen-btn').addEventListener('click', function() {
+            var container = document.getElementById('game-container');
+            if (document.fullscreenElement) {
+              document.exitFullscreen();
+            } else if (container.requestFullscreen) {
+              container.requestFullscreen();
+            } else if (container.webkitRequestFullscreen) {
+              container.webkitRequestFullscreen();
+            } else if (container.msRequestFullscreen) {
+              container.msRequestFullscreen();
+            }
+          });
+          document.addEventListener('fullscreenchange', function() {
+            var btn = document.getElementById('fullscreen-btn');
+            var container = document.getElementById('game-container');
+            if (document.fullscreenElement) {
+              btn.innerHTML = '<svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 9V4.5M9 9H4.5M9 9L3.75 3.75M9 15v4.5M9 15H4.5M9 15l-5.25 5.25M15 9h4.5M15 9V4.5M15 9l5.25-5.25M15 15h4.5M15 15v4.5m0-4.5l5.25 5.25"/></svg> Exit Fullscreen';
+              container.style.background = '#0b1020';
+            } else {
+              btn.innerHTML = '<svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9m11.25-5.25v4.5m0-4.5h-4.5m4.5 0L15 9m-11.25 11.25v-4.5m0 4.5h4.5m-4.5 0L9 15m11.25 5.25v-4.5m0 4.5h-4.5m4.5 0L15 15"/></svg> Fullscreen';
+            }
+          });
+        </script>
+
         <!-- Disclaimer -->
         <div class="rounded-xl border border-white/10 bg-white/5 p-4 text-xs text-slate-400">
           <strong class="text-slate-300">Disclaimer:</strong> This game is embedded from a third-party source and remains the intellectual property of its original creator. PlayZen does not host or modify game files. If you are the rights holder and have concerns, please visit our <a href="../dmca.html" class="text-indigo-400 hover:text-indigo-300">DMCA / Copyright page</a>.
         </div>
 
         <!-- AD — below game -->
-        <div class="ad-placeholder ad-placeholder--rectangle">Advertisement · Below game</div>
+        <div class="flex justify-center"><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2844527705842952" data-ad-slot="rectangle-below-game"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>
 
         <!-- GAME DESCRIPTION (SEO content) -->
         <section>
@@ -160,11 +191,15 @@
             </details>
           </div>
         </section>
+
+        <!-- AD — bottom content -->
+        <div class="flex justify-center"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2844527705842952" data-ad-slot="rectangle-bottom-content" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>
       </div>
 
       <!-- SIDEBAR -->
       <aside class="space-y-6 lg:pt-16">
-        <div class="ad-placeholder ad-placeholder--rectangle hidden lg:flex">Advertisement · Sidebar</div>
+        <!-- AD — sidebar -->
+        <div class="hidden lg:block"><ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-2844527705842952" data-ad-slot="rectangle-sidebar"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>
         <div class="rounded-xl border border-white/5 bg-slate-900/60 p-4 space-y-3">
           <h3 class="font-semibold text-white">Game Info</h3>
           <div class="flex justify-between text-sm"><span class="text-slate-400">Category</span><a href="../categories.html?cat=puzzle" class="text-indigo-400 hover:text-indigo-300">Puzzle</a></div>
@@ -174,6 +209,8 @@
           <div class="flex justify-between text-sm"><span class="text-slate-400">Price</span><span class="text-emerald-400">Free</span></div>
         </div>
         <a href="../categories.html?cat=puzzle" class="block rounded-xl border border-white/5 bg-white/5 p-4 text-center text-sm font-semibold text-indigo-400 hover:bg-white/10 hover:text-indigo-300">Browse more Puzzle games →</a>
+        <!-- AD — sidebar bottom -->
+        <div class="hidden lg:block"><ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-2844527705842952" data-ad-slot="rectangle-sidebar-bottom"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>
       </aside>
     </div>
 
@@ -188,7 +225,7 @@
   <footer class="border-t border-white/5 bg-slate-950"><div class="mx-auto grid max-w-7xl grid-cols-2 gap-8 px-4 py-12 sm:px-6 md:grid-cols-4 lg:px-8"><div class="col-span-2"><div class="flex items-center gap-2"><span class="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-indigo-500 to-fuchsia-500 font-black">P</span><span class="text-lg font-bold">PlayZen</span></div><p class="mt-3 max-w-sm text-sm text-slate-400">Free browser games. No downloads. Just play.</p></div><div><h3 class="text-sm font-semibold text-white">Explore</h3><ul class="mt-3 space-y-2 text-sm text-slate-400"><li><a href="../trending.html" class="hover:text-white">Trending</a></li><li><a href="../categories.html" class="hover:text-white">Categories</a></li><li><a href="../favorites.html" class="hover:text-white">Favorites</a></li></ul></div><div><h3 class="text-sm font-semibold text-white">Legal & Info</h3><ul class="mt-3 space-y-2 text-sm text-slate-400"><li><a href="../about.html" class="hover:text-white">About</a></li><li><a href="../contact.html" class="hover:text-white">Contact</a></li><li><a href="../privacy.html" class="hover:text-white">Privacy Policy</a></li><li><a href="../terms.html" class="hover:text-white">Terms of Use</a></li><li><a href="../dmca.html" class="hover:text-white">DMCA / Copyright</a></li></ul></div></div><div class="border-t border-white/5"><div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 px-4 py-6 text-xs text-slate-500 sm:flex-row sm:px-6 lg:px-8"><p>© <span data-year></span> PlayZen. Games are property of their respective owners.</p><p>Made for casual players. Family-friendly. Ad-supported.</p></div></div></footer>
 
   <!-- Sticky mobile ad -->
-  <div class="ad-placeholder ad-placeholder--sticky md:hidden">Advertisement</div>
+  <div class="fixed bottom-0 left-0 right-0 z-50 flex justify-center bg-slate-950/90 p-2 md:hidden"><ins class="adsbygoogle" style="display:inline-block;width:320px;height:50px" data-ad-client="ca-pub-2844527705842952" data-ad-slot="banner-sticky-mobile"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>
 
   <script src="../assets/data/games.js"></script>
   <script src="../assets/js/storage.js"></script>
