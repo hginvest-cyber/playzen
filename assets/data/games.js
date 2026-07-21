@@ -120,7 +120,7 @@ const PLAYZEN_GAMES = [
       'Think about common letter patterns and word endings.'
     ],
     isFeatured: true, isTrending: true, plays: 345000, rating: 4.8, hasPage: true,
-    relatedGames: ['word-puzzle', 'word-guess', 'sudoku', 'memory-match']
+    relatedGames: ['word-puzzle', 'sudoku', 'memory-match', 'hextris']
   },
   {
     id: 'pz-wordpuzzle', slug: 'word-puzzle', title: 'Word Puzzle',
@@ -142,7 +142,7 @@ const PLAYZEN_GAMES = [
       'Found words are usually highlighted, helping you eliminate covered areas.'
     ],
     isFeatured: false, isTrending: false, plays: 134000, rating: 4.3, hasPage: true,
-    relatedGames: ['wordle', 'word-guess', 'sudoku', 'memory-match']
+    relatedGames: ['wordle', 'sudoku', 'memory-match', 'hextris']
   },
   {
     id: 'pz-cubes', slug: 'cubes', title: 'Cubes',
@@ -208,7 +208,7 @@ const PLAYZEN_GAMES = [
       'Use undo liberally \u2014 experimentation is key to solving harder levels.'
     ],
     isFeatured: false, isTrending: true, plays: 145000, rating: 4.5, hasPage: true,
-    relatedGames: ['astray', 'maze', 'sudoku', 'slope']
+    relatedGames: ['astray', 'sudoku', 'slope', 'hextris']
   },
   {
     id: 'pz-astray', slug: 'astray', title: 'Astray',
@@ -230,7 +230,7 @@ const PLAYZEN_GAMES = [
       'Gentle taps work better than holding keys down.'
     ],
     isFeatured: true, isTrending: false, plays: 89000, rating: 4.4, hasPage: true,
-    relatedGames: ['maze', 'sokoban', 'slope', 'hextris']
+    relatedGames: ['sokoban', 'slope', 'hextris', 'tetris']
   },
   {
     id: 'pz-match3', slug: 'match-3', title: 'Match 3',
@@ -239,8 +239,8 @@ const PLAYZEN_GAMES = [
     longDescription: 'The classic match-three puzzle. Swap adjacent gems to create rows or columns of three or more matching colors. Chain combos for massive scores and try to clear the entire board.',
     thumbnail: 'assets/images/thumb-match3.png',
     thumbGradient: 'from-fuchsia-500 via-pink-500 to-rose-500',
-    embedUrl: 'https://tebesoft.github.io/match-3/',
-    externalUrl: 'https://tebesoft.github.io/match-3/',
+    embedUrl: 'https://tebesoft.github.io/match-3/dist/',
+    externalUrl: 'https://tebesoft.github.io/match-3/dist/',
     controls: [
       { key: 'Click + Drag', description: 'Swap two adjacent gems' },
       { key: 'Tap + Swipe', description: 'Swap on mobile' }
@@ -278,48 +278,6 @@ const PLAYZEN_GAMES = [
     isFeatured: true, isTrending: false, plays: 78000, rating: 4.3, hasPage: true,
     relatedGames: ['slope', 'tetris', 'hextris', 'cubes']
   },
-  {
-    id: 'pz-maze', slug: 'maze', title: 'Maze Game',
-    category: 'Puzzle', categorySlug: 'puzzle',
-    shortDescription: 'Find your way through randomly generated mazes.',
-    longDescription: 'Navigate through procedurally generated mazes of increasing complexity. A clean, minimal maze game that tests your spatial reasoning and pathfinding skills.',
-    thumbnail: 'assets/images/thumb-maze.png',
-    thumbGradient: 'from-lime-500 via-green-500 to-teal-500',
-    embedUrl: 'https://kunalgarg2100.github.io/maze-game/',
-    externalUrl: 'https://kunalgarg2100.github.io/maze-game/',
-    controls: [
-      { key: 'Arrow Keys / W A S D', description: 'Move through the maze' }
-    ],
-    tips: [
-      'Use the right-hand rule: keep your right hand touching the wall and follow it.',
-      'Look ahead for dead ends before committing to a path.',
-      'Try to build a mental map of areas you\'ve explored.',
-      'Backtrack quickly when you hit a dead end \u2014 don\'t hesitate.'
-    ],
-    isFeatured: false, isTrending: false, plays: 67000, rating: 4.1, hasPage: true,
-    relatedGames: ['astray', 'sokoban', 'pac-man', 'untrusted']
-  },
-  {
-    id: 'pz-csssweeper', slug: 'css-sweeper', title: 'CSS Sweeper',
-    category: 'Puzzle', categorySlug: 'puzzle',
-    shortDescription: 'Minesweeper built entirely with CSS \u2014 no JavaScript.',
-    longDescription: 'A remarkable technical achievement: a fully playable Minesweeper clone built entirely with CSS and HTML, no JavaScript involved. Same classic gameplay, powered by pure CSS selectors and counters.',
-    thumbnail: 'assets/images/thumb-csssweeper.png',
-    thumbGradient: 'from-rose-500 via-red-500 to-orange-500',
-    embedUrl: 'https://propjockey.github.io/css-sweeper/',
-    externalUrl: 'https://propjockey.github.io/css-sweeper/',
-    controls: [
-      { key: 'Click / Tap', description: 'Reveal a cell' }
-    ],
-    tips: [
-      'Same strategies as classic Minesweeper apply here.',
-      'Start with corners and edges for safer first clicks.',
-      'Count adjacent mines carefully before clicking.',
-      'This version has no flag feature \u2014 rely on mental notes.'
-    ],
-    isFeatured: false, isTrending: false, plays: 45000, rating: 4.0, hasPage: true,
-    relatedGames: ['minesweeper', 'sudoku', 'sokoban', 'slope']
-  },
 
   /* ─── ARCADE ───────────────────────────────────────────── */
   {
@@ -342,7 +300,7 @@ const PLAYZEN_GAMES = [
       'The first five pipes are the hardest. Stay calm.'
     ],
     isFeatured: true, isTrending: true, plays: 398000, rating: 4.6, hasPage: true,
-    relatedGames: ['clumsy-bird', 'tower-stack', 'ski-free', 'snake']
+    relatedGames: ['clumsy-bird', 'tower-stack', 'ski-free', 'pac-man']
   },
   {
     id: 'pz-tower', slug: 'tower-stack', title: 'Tower Stack',
@@ -367,28 +325,6 @@ const PLAYZEN_GAMES = [
     relatedGames: ['flappy-bird', 'tetris', 'brick-breaker', 'slope']
   },
   {
-    id: 'pz-snake', slug: 'snake', title: 'Snake',
-    category: 'Arcade', categorySlug: 'arcade',
-    shortDescription: 'Eat, grow, don\'t hit your own tail.',
-    longDescription: 'The timeless snake game. Guide your snake to eat food and grow longer, but don\'t run into the walls or your own tail. Simple to learn, surprisingly hard to master as your snake fills the screen.',
-    thumbnail: 'assets/images/thumb-snake.png',
-    thumbGradient: 'from-green-500 via-emerald-500 to-teal-500',
-    embedUrl: 'https://ramazancetinkaya.github.io/snake-game/',
-    externalUrl: 'https://ramazancetinkaya.github.io/snake-game/',
-    controls: [
-      { key: 'Arrow Keys', description: 'Change direction' },
-      { key: 'W A S D', description: 'Alternative controls' }
-    ],
-    tips: [
-      'Stay near the center of the board when your snake is short.',
-      'Create a predictable pattern \u2014 spiraling inward works well.',
-      'Never chase food into a tight corner at high speeds.',
-      'Keep your tail\'s path in mind to avoid self-collisions.'
-    ],
-    isFeatured: true, isTrending: true, plays: 356000, rating: 4.6, hasPage: true,
-    relatedGames: ['pac-man', 'flappy-bird', 'retro-snake', 'ski-free']
-  },
-  {
     id: 'pz-pacman', slug: 'pac-man', title: 'Pac-Man',
     category: 'Arcade', categorySlug: 'arcade',
     shortDescription: 'Eat all the dots. Avoid the ghosts. Chomp power pellets.',
@@ -408,7 +344,7 @@ const PLAYZEN_GAMES = [
       'Clear the most dangerous corridors first while ghosts are in scatter mode.'
     ],
     isFeatured: true, isTrending: true, plays: 412000, rating: 4.8, hasPage: true,
-    relatedGames: ['snake', 'space-invaders', 'flappy-bird', 'alien-invasion']
+    relatedGames: ['space-invaders', 'flappy-bird', 'alien-invasion', 'tower-stack']
   },
   {
     id: 'pz-spaceinvaders', slug: 'space-invaders', title: 'Space Invaders',
@@ -452,7 +388,7 @@ const PLAYZEN_GAMES = [
       'Practice maintaining altitude rather than rapidly ascending and falling.'
     ],
     isFeatured: false, isTrending: false, plays: 123000, rating: 4.3, hasPage: true,
-    relatedGames: ['flappy-bird', 'tower-stack', 'ski-free', 'snake']
+    relatedGames: ['flappy-bird', 'tower-stack', 'ski-free', 'pac-man']
   },
   {
     id: 'pz-skifree', slug: 'ski-free', title: 'SkiFree',
@@ -474,28 +410,7 @@ const PLAYZEN_GAMES = [
       'The yeti appears after a certain distance \u2014 be ready to sprint.'
     ],
     isFeatured: true, isTrending: true, plays: 198000, rating: 4.6, hasPage: true,
-    relatedGames: ['flappy-bird', 'snake', 'duck-hunt', 'emberwind']
-  },
-  {
-    id: 'pz-tabletennis', slug: 'table-tennis', title: 'Table Tennis',
-    category: 'Arcade', categorySlug: 'arcade',
-    shortDescription: 'Fluid pong-style table tennis with smooth physics.',
-    longDescription: 'A sleek browser-based table tennis game with fluid physics. Move your paddle to return the ball and score points against the AI opponent. Smooth animations make every rally satisfying.',
-    thumbnail: 'assets/images/thumb-tabletennis.png',
-    thumbGradient: 'from-blue-500 via-indigo-500 to-violet-500',
-    embedUrl: 'https://anirudhjoshi.github.io/fluid_table_tennis/',
-    externalUrl: 'https://anirudhjoshi.github.io/fluid_table_tennis/',
-    controls: [
-      { key: 'Mouse / Touch', description: 'Move your paddle' }
-    ],
-    tips: [
-      'Anticipate where the ball will go rather than reacting to it.',
-      'Hit the ball with the edge of your paddle for angled shots.',
-      'Keep your paddle near the center to cover both sides.',
-      'Vary your shot placement to keep the AI guessing.'
-    ],
-    isFeatured: false, isTrending: true, plays: 167000, rating: 4.4, hasPage: true,
-    relatedGames: ['brick-breaker', 'space-invaders', 'flappy-bird', 'snake']
+    relatedGames: ['flappy-bird', 'duck-hunt', 'emberwind', 'tower-stack']
   },
   {
     id: 'pz-alieninvasion', slug: 'alien-invasion', title: 'Alien Invasion',
@@ -562,7 +477,7 @@ const PLAYZEN_GAMES = [
       'Don\'t panic when the ball speeds up \u2014 stay centered and reactive.'
     ],
     isFeatured: false, isTrending: true, plays: 198000, rating: 4.4, hasPage: true,
-    relatedGames: ['table-tennis', 'tetris', 'space-invaders', 'tower-stack']
+    relatedGames: ['tetris', 'space-invaders', 'tower-stack', 'flappy-bird']
   },
   {
     id: 'pz-duckhunt', slug: 'duck-hunt', title: 'Duck Hunt',
@@ -604,7 +519,7 @@ const PLAYZEN_GAMES = [
       'Speed increases as you eat \u2014 keep your movements tight and controlled.'
     ],
     isFeatured: false, isTrending: false, plays: 89000, rating: 4.2, hasPage: true,
-    relatedGames: ['snake', 'pac-man', 'flappy-bird', 'ski-free']
+    relatedGames: ['pac-man', 'flappy-bird', 'ski-free', 'tower-stack']
   },
 
   /* ─── STRATEGY ─────────────────────────────────────────── */
@@ -628,7 +543,7 @@ const PLAYZEN_GAMES = [
       'Think about your opponent\'s threats before making your move.'
     ],
     isFeatured: false, isTrending: true, plays: 189000, rating: 4.7, hasPage: true,
-    relatedGames: ['checkers', 'reversi', 'connect-four', 'tic-tac-toe']
+    relatedGames: ['checkers', 'reversi', 'connect-four', 'a-dark-room']
   },
   {
     id: 'pz-connect4', slug: 'connect-four', title: 'Connect Four',
@@ -649,7 +564,7 @@ const PLAYZEN_GAMES = [
       'Create "double threats" where you can win in two places at once.'
     ],
     isFeatured: false, isTrending: true, plays: 178000, rating: 4.5, hasPage: true,
-    relatedGames: ['chess', 'checkers', 'reversi', 'tic-tac-toe']
+    relatedGames: ['chess', 'checkers', 'reversi', 'a-dark-room']
   },
   {
     id: 'pz-checkers', slug: 'checkers', title: 'Checkers',
@@ -671,7 +586,7 @@ const PLAYZEN_GAMES = [
       'Set up double and triple jumps for big captures.'
     ],
     isFeatured: false, isTrending: false, plays: 145000, rating: 4.4, hasPage: true,
-    relatedGames: ['chess', 'reversi', 'connect-four', 'tic-tac-toe']
+    relatedGames: ['chess', 'reversi', 'connect-four', 'a-dark-room']
   },
   {
     id: 'pz-reversi', slug: 'reversi', title: 'Reversi',
@@ -692,28 +607,7 @@ const PLAYZEN_GAMES = [
       'Focus on limiting your opponent\'s available moves.'
     ],
     isFeatured: false, isTrending: false, plays: 112000, rating: 4.3, hasPage: true,
-    relatedGames: ['chess', 'checkers', 'connect-four', 'tic-tac-toe']
-  },
-  {
-    id: 'pz-tictactoe', slug: 'tic-tac-toe', title: 'Tic-Tac-Toe',
-    category: 'Strategy', categorySlug: 'strategy',
-    shortDescription: 'X\'s and O\'s \u2014 the simplest strategy game.',
-    longDescription: 'The classic pen-and-paper game, now in your browser. Take turns placing X\'s and O\'s on a 3\u00d73 grid. Get three in a row to win. Simple for kids, a solved game for strategists.',
-    thumbnail: 'assets/images/thumb-tictactoe.png',
-    thumbGradient: 'from-blue-500 via-indigo-500 to-purple-500',
-    embedUrl: 'https://bethqiang.github.io/tic-tac-toe/',
-    externalUrl: 'https://bethqiang.github.io/tic-tac-toe/',
-    controls: [
-      { key: 'Click / Tap', description: 'Place your mark' }
-    ],
-    tips: [
-      'Always take the center if it\'s available.',
-      'If you go first, take a corner for the best winning chances.',
-      'Block your opponent\'s two-in-a-row immediately.',
-      'Create a "fork" \u2014 a position where you can win in two ways at once.'
-    ],
-    isFeatured: false, isTrending: false, plays: 234000, rating: 4.1, hasPage: true,
-    relatedGames: ['connect-four', 'chess', 'checkers', 'reversi']
+    relatedGames: ['chess', 'checkers', 'connect-four', 'a-dark-room']
   },
   {
     id: 'pz-darkroom', slug: 'a-dark-room', title: 'A Dark Room',
@@ -779,7 +673,7 @@ const PLAYZEN_GAMES = [
       'If stuck, think about what game objects you can create or modify.'
     ],
     isFeatured: true, isTrending: false, plays: 78000, rating: 4.6, hasPage: true,
-    relatedGames: ['a-dark-room', 'sokoban', 'maze', 'chess']
+    relatedGames: ['a-dark-room', 'sokoban', 'chess', 'connect-four']
   },
 
   /* ─── CASUAL ───────────────────────────────────────────── */
@@ -847,72 +741,7 @@ const PLAYZEN_GAMES = [
       'Keep your fingers hovering over the keys for faster reaction times.'
     ],
     isFeatured: false, isTrending: false, plays: 67000, rating: 4.2, hasPage: true,
-    relatedGames: ['piano', 'flappy-bird', 'tower-stack', 'ski-free']
-  },
-  {
-    id: 'pz-wordguess', slug: 'word-guess', title: 'Word Guess',
-    category: 'Casual', categorySlug: 'casual',
-    shortDescription: 'Guess the word before you run out of tries.',
-    longDescription: 'A classic hangman-style word guessing game. Pick letters to reveal the hidden word before you run out of guesses. A relaxing vocabulary game for all ages.',
-    thumbnail: 'assets/images/thumb-wordguess.png',
-    thumbGradient: 'from-teal-500 via-cyan-500 to-sky-500',
-    embedUrl: 'https://vdelariva.github.io/Word-Guess-Game/',
-    externalUrl: 'https://vdelariva.github.io/Word-Guess-Game/',
-    controls: [
-      { key: 'Keyboard', description: 'Press a letter to guess' }
-    ],
-    tips: [
-      'Start with common vowels: E, A, I, O.',
-      'Then try popular consonants: T, N, S, R.',
-      'Look at the word length and revealed pattern for clues.',
-      'Avoid rare letters like Q, X, Z until you have more information.'
-    ],
-    isFeatured: false, isTrending: false, plays: 78000, rating: 4.1, hasPage: true,
-    relatedGames: ['wordle', 'word-puzzle', 'sudoku', 'memory-match']
-  },
-  {
-    id: 'pz-piano', slug: 'piano', title: 'Piano',
-    category: 'Casual', categorySlug: 'casual',
-    shortDescription: 'Play piano in your browser. Learn and create music.',
-    longDescription: 'A browser-based piano keyboard. Play notes and chords using your keyboard or mouse. Perfect for casual music exploration, learning basic piano, or just having fun making sounds.',
-    thumbnail: 'assets/images/thumb-piano.png',
-    thumbGradient: 'from-slate-300 via-white to-slate-300',
-    embedUrl: 'https://marisabrantley.github.io/piano-game/',
-    externalUrl: 'https://marisabrantley.github.io/piano-game/',
-    controls: [
-      { key: 'Keyboard Keys', description: 'Play different notes' },
-      { key: 'Click / Tap', description: 'Click piano keys directly' }
-    ],
-    tips: [
-      'Start with simple melodies you know by heart.',
-      'Use both hands for richer sounds.',
-      'Learn the keyboard mapping to find notes quickly.',
-      'Try playing along with your favorite songs.'
-    ],
-    isFeatured: false, isTrending: false, plays: 56000, rating: 4.0, hasPage: true,
-    relatedGames: ['rhythm-game', 'memory-match', 'cookie-clicker', 'solitaire']
-  },
-  {
-    id: 'pz-github-games', slug: 'github-games', title: 'Contribution Games',
-    category: 'Casual', categorySlug: 'casual',
-    shortDescription: 'Play classic games on a GitHub-style contribution graph.',
-    longDescription: 'A creative collection of classic games (Snake, Breakout, Battle City) played on a grid that looks like the GitHub contribution graph. A fun twist on familiar gameplay for developers and gamers alike.',
-    thumbnail: 'assets/images/thumb-githubgames.png',
-    thumbGradient: 'from-green-400 via-green-500 to-green-600',
-    embedUrl: 'https://veelenga.github.io/gccg/',
-    externalUrl: 'https://veelenga.github.io/gccg/',
-    controls: [
-      { key: 'Arrow Keys', description: 'Move / control' },
-      { key: 'Space', description: 'Start / action' }
-    ],
-    tips: [
-      'The green-tinted grid takes some getting used to \u2014 focus on movement patterns.',
-      'Each game within the collection has its own controls.',
-      'Snake is the easiest to start with on this grid.',
-      'The grid layout adds a unique challenge to familiar games.'
-    ],
-    isFeatured: false, isTrending: false, plays: 45000, rating: 4.1, hasPage: true,
-    relatedGames: ['snake', 'brick-breaker', 'pac-man', 'retro-snake']
+    relatedGames: ['flappy-bird', 'tower-stack', 'ski-free', 'solitaire']
   },
 
   /* ─── NEW POPULAR GAMES ────────────────────────────────── */
@@ -979,7 +808,7 @@ const PLAYZEN_GAMES = [
       'Short hops work better than big jumps for closely spaced obstacles.'
     ],
     isFeatured: true, isTrending: true, plays: 920000, rating: 4.9, hasPage: true,
-    relatedGames: ['slope', 'flappy-bird', 'ski-free', 'snake']
+    relatedGames: ['slope', 'flappy-bird', 'ski-free', 'tower-stack']
   },
   {
     id: 'pz-mahjong', slug: 'mahjong', title: 'Mahjong Solitaire',
@@ -1132,7 +961,7 @@ const PLAYZEN_GAMES = [
       'Sometimes the indirect path is easier than a straight shot.'
     ],
     isFeatured: false, isTrending: true, plays: 198000, rating: 4.4, hasPage: true,
-    relatedGames: ['bowling', 'table-tennis', 'pinball', 'solitaire']
+    relatedGames: ['bowling', 'pinball', 'solitaire', 'cookie-clicker']
   },
   {
     id: 'pz-bowling', slug: 'bowling', title: 'Bowling',
@@ -1153,7 +982,7 @@ const PLAYZEN_GAMES = [
       'Consistency is key \u2014 find a line that works and repeat it.'
     ],
     isFeatured: false, isTrending: false, plays: 145000, rating: 4.2, hasPage: true,
-    relatedGames: ['mini-golf', 'table-tennis', 'pinball', 'dino-runner']
+    relatedGames: ['mini-golf', 'pinball', 'dino-runner', 'solitaire']
   },
   {
     id: 'pz-blockpuzzle', slug: 'block-puzzle', title: 'Block Puzzle',
@@ -1196,7 +1025,7 @@ const PLAYZEN_GAMES = [
       'Learn the drain paths and which flipper saves each one.'
     ],
     isFeatured: false, isTrending: true, plays: 234000, rating: 4.5, hasPage: true,
-    relatedGames: ['brick-breaker', 'table-tennis', 'bowling', 'slope']
+    relatedGames: ['brick-breaker', 'bowling', 'slope', 'flappy-bird']
   },
   {
     id: 'pz-hangman', slug: 'hangman', title: 'Hangman',
@@ -1217,7 +1046,7 @@ const PLAYZEN_GAMES = [
       'Save rare letters (Q, X, Z, J) for last \u2014 they rarely appear.'
     ],
     isFeatured: false, isTrending: false, plays: 167000, rating: 4.2, hasPage: true,
-    relatedGames: ['word-guess', 'wordle', 'crossword', 'word-puzzle']
+    relatedGames: ['wordle', 'crossword', 'word-puzzle', 'solitaire']
   },
   {
     id: 'pz-dotsandboxes', slug: 'dots-and-boxes', title: 'Dots and Boxes',
@@ -1238,7 +1067,7 @@ const PLAYZEN_GAMES = [
       'Sacrifice a small chain early to gain control of larger chains later.'
     ],
     isFeatured: false, isTrending: false, plays: 89000, rating: 4.3, hasPage: true,
-    relatedGames: ['tic-tac-toe', 'connect-four', 'checkers', 'chess']
+    relatedGames: ['connect-four', 'checkers', 'chess', 'reversi']
   },
 
   /* ─── NEW ADDITIONS ─────────────────────────────────── */
@@ -1419,6 +1248,145 @@ const PLAYZEN_GAMES = [
     ],
     isFeatured: false, isTrending: false, plays: 61000, rating: 4.4, hasPage: true,
     relatedGames: ['sudoku', 'minesweeper', 'nonogram', 'memory-match']
+  },
+
+  /* ─── BATCH 2 ADDITIONS ─────────────────────────────── */
+  {
+    id: 'pz-ztype', slug: 'ztype', title: 'ZType',
+    category: 'Arcade', categorySlug: 'arcade',
+    shortDescription: 'Type to shoot — the legendary typing space shooter.',
+    longDescription: 'ZType turns typing practice into a gorgeous space shooter. Enemy ships descend with words attached — type a ship\'s word to target it, letter by letter, and finish the word to destroy it. Miss too many and the swarm overwhelms you.',
+    thumbnail: 'assets/images/thumb-ztype.png',
+    thumbGradient: 'from-slate-500 via-indigo-600 to-blue-700',
+    embedUrl: 'https://zty.pe/',
+    externalUrl: 'https://zty.pe/',
+    controls: [
+      { key: 'Keyboard', description: 'Type the word on a ship to target and shoot it' },
+      { key: 'Enter', description: 'Switch target / start game' }
+    ],
+    tips: [
+      'Finish one word before starting another — half-typed ships keep shooting.',
+      'Prioritize fast-moving ships and missiles over big slow ones.',
+      'Accuracy beats speed: typos break your streak multiplier.',
+      'Watch for the EMP charge — it clears the screen when you\'re swarmed.'
+    ],
+    isFeatured: true, isTrending: true, plays: 195000, rating: 4.8, hasPage: true,
+    relatedGames: ['space-invaders', 'underrun', 'xibalba', 'alien-invasion']
+  },
+  {
+    id: 'pz-sandspiel', slug: 'sandspiel', title: 'Sandspiel',
+    category: 'Casual', categorySlug: 'casual',
+    shortDescription: 'A beautiful falling-sand sandbox — draw with the elements.',
+    longDescription: 'Sandspiel is a mesmerizing falling-sand sandbox. Pick an element — sand, water, fire, plant, lava, acid, gas, and more — and paint it onto the canvas. Every particle is simulated: water flows, fire spreads, plants grow, ice freezes, and everything interacts.',
+    thumbnail: 'assets/images/thumb-sandspiel.png',
+    thumbGradient: 'from-amber-400 via-orange-500 to-rose-500',
+    embedUrl: 'https://sandspiel.club/',
+    externalUrl: 'https://sandspiel.club/',
+    controls: [
+      { key: 'Click / Drag', description: 'Paint the selected element' },
+      { key: 'Element buttons', description: 'Choose sand, water, fire, plant, and more' },
+      { key: 'Brush sizes', description: 'Change how much you paint at once' }
+    ],
+    tips: [
+      'Start with sand and water to learn how particles flow and settle.',
+      'Plant + water + a spark of fire makes spectacular slow burns.',
+      'Wall lets you build containers before pouring in liquids.',
+      'Try dust + fire… from a safe distance.'
+    ],
+    isFeatured: true, isTrending: true, plays: 158000, rating: 4.7, hasPage: true,
+    relatedGames: ['line-rider', 'little-alchemy-2', 'cookie-clicker', 'trimps']
+  },
+  {
+    id: 'pz-linerider', slug: 'line-rider', title: 'Line Rider',
+    category: 'Casual', categorySlug: 'casual',
+    shortDescription: 'Draw a track. Ride the sled. The classic physics toy.',
+    longDescription: 'Line Rider is one of the most beloved browser games ever made. You draw a track — hills, jumps, loops — with a simple pencil tool, then press play and watch Bosh the sledder ride whatever you created, obeying simple, satisfying physics.',
+    thumbnail: 'assets/images/thumb-line-rider.png',
+    thumbGradient: 'from-sky-300 via-slate-400 to-slate-700',
+    embedUrl: 'https://www.linerider.com/',
+    externalUrl: 'https://www.linerider.com/',
+    controls: [
+      { key: 'Pencil (draw)', description: 'Draw track lines' },
+      { key: 'Eraser', description: 'Remove lines' },
+      { key: 'Play / Stop', description: 'Run or reset the physics' },
+      { key: 'Scroll / Drag', description: 'Pan and zoom the canvas' }
+    ],
+    tips: [
+      'Gentle slopes first — steep drops send Bosh flying off the sled.',
+      'Blue lines are normal track, red lines accelerate, green are scenery.',
+      'Build in small sections and test with Play after each change.',
+      'Momentum is everything: bank your curves like a roller coaster.'
+    ],
+    isFeatured: true, isTrending: true, plays: 187000, rating: 4.8, hasPage: true,
+    relatedGames: ['sandspiel', 'ski-free', 'slope', 'hexgl']
+  },
+  {
+    id: 'pz-tanx', slug: 'tanx', title: 'TANX',
+    category: 'Arcade', categorySlug: 'arcade',
+    shortDescription: 'Online multiplayer tank battles — instant chaos, no signup.',
+    longDescription: 'TANX drops you straight into a live multiplayer arena full of real players. Drive your tank through a beautifully rendered battlefield, grab power-ups to upgrade your cannon, and rack up kills in fast, chaotic team battles.',
+    thumbnail: 'assets/images/thumb-tanx.png',
+    thumbGradient: 'from-green-600 via-emerald-700 to-teal-800',
+    embedUrl: 'https://playcanv.as/p/aP0oxhUr/',
+    externalUrl: 'https://playcanv.as/p/aP0oxhUr/',
+    controls: [
+      { key: 'W A S D / Arrows', description: 'Drive your tank' },
+      { key: 'Mouse', description: 'Aim the turret' },
+      { key: 'Click / Space', description: 'Fire' }
+    ],
+    tips: [
+      'Keep moving — a stationary tank is target practice.',
+      'Grab the power-up crates: stacked upgrades snowball fast.',
+      'Use buildings as cover and peek out to fire.',
+      'Third-party fights: let two tanks trade shots, then clean up.'
+    ],
+    isFeatured: false, isTrending: true, plays: 121000, rating: 4.6, hasPage: true,
+    relatedGames: ['xibalba', 'underrun', 'swooop', 'space-invaders']
+  },
+  {
+    id: 'pz-0hh1', slug: '0hh1', title: '0h h1',
+    category: 'Puzzle', categorySlug: 'puzzle',
+    shortDescription: 'A gorgeous binary logic puzzle — three simple rules.',
+    longDescription: '0h h1 is a lovely logic puzzle built on three simple rules: no three tiles of the same color in a row, every row and column has an equal number of red and blue tiles, and no two rows or columns are identical. From those rules, every puzzle has exactly one solution you can reach by pure deduction.',
+    thumbnail: 'assets/images/thumb-0hh1.png',
+    thumbGradient: 'from-red-500 via-rose-600 to-pink-600',
+    embedUrl: 'https://0hh1.com/',
+    externalUrl: 'https://0hh1.com/',
+    controls: [
+      { key: 'Click / Tap', description: 'Cycle a tile: empty → red → blue' },
+      { key: 'Hint button', description: 'Get a nudge when stuck' }
+    ],
+    tips: [
+      'Two same-colored tiles together? The tiles on both ends must be the opposite color.',
+      'Count colors: once a row has its quota of red, the rest is blue.',
+      'Compare nearly-finished rows — duplicates are forbidden.',
+      'Never guess. Every tile is deducible; guessing creates contradictions later.'
+    ],
+    isFeatured: false, isTrending: false, plays: 87000, rating: 4.5, hasPage: true,
+    relatedGames: ['sudoku', 'nonogram', 'breaklock', 'minesweeper']
+  },
+  {
+    id: 'pz-littlealchemy2', slug: 'little-alchemy-2', title: 'Little Alchemy 2',
+    category: 'Casual', categorySlug: 'casual',
+    shortDescription: 'Combine elements to discover all 700+ items.',
+    longDescription: 'Little Alchemy 2 starts you with four basic elements — air, water, earth, and fire — and one simple action: drag one onto another and see what you create. Water plus fire makes steam. Earth plus water makes mud. Before long you\'re crafting life, tools, animals, and ideas.',
+    thumbnail: 'assets/images/thumb-little-alchemy-2.png',
+    thumbGradient: 'from-purple-500 via-violet-600 to-indigo-600',
+    embedUrl: 'https://littlealchemy2.com/',
+    externalUrl: 'https://littlealchemy2.com/',
+    controls: [
+      { key: 'Drag & Drop', description: 'Combine two elements' },
+      { key: 'Double-click', description: 'Duplicate an element on the board' },
+      { key: 'Search', description: 'Find items you\'ve already discovered' }
+    ],
+    tips: [
+      'Combine every new discovery with the basics: air, water, earth, fire.',
+      'Doubling an element often works — two water makes a puddle.',
+      'Think in categories: life, tools, and humans unlock huge branches.',
+      'Stuck? The encyclopedia shows which of your items still have undiscovered uses.'
+    ],
+    isFeatured: true, isTrending: true, plays: 232000, rating: 4.8, hasPage: true,
+    relatedGames: ['sandspiel', 'candy-box-2', 'cookie-clicker', 'memory-match']
   }
 ];
 

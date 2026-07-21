@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Play Snake Online for Free | PlayZen</title>
-  <meta name="description" content="Play Snake online for free in your browser. Eat, grow, don't hit your own tail. No downloads — instant play on PlayZen." />
-  <link rel="canonical" href="https://www.playzen.live/games/snake.html" />
+  <title>Play Sandspiel Online for Free | PlayZen</title>
+  <meta name="description" content="Play Sandspiel online for free in your browser. A beautiful falling-sand physics sandbox — paint with sand, water, fire, plants and watch them interact. Instant play on PlayZen." />
+  <link rel="canonical" href="https://www.playzen.live/games/sandspiel.html" />
 
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Play Snake Online for Free | PlayZen" />
-  <meta property="og:description" content="Eat, grow, don't hit your own tail. Free browser game — no downloads." />
-  <meta property="og:url" content="https://www.playzen.live/games/snake.html" />
-  <meta property="og:image" content="https://www.playzen.live/assets/images/og-snake.png" />
+  <meta property="og:title" content="Play Sandspiel Online for Free | PlayZen" />
+  <meta property="og:description" content="Paint with sand, water, fire, plants, and stranger elements — then watch physics take over. Free, instant, no downloads." />
+  <meta property="og:url" content="https://www.playzen.live/games/sandspiel.html" />
+  <meta property="og:image" content="https://www.playzen.live/assets/images/og-sandspiel.png" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Play Snake Online for Free | PlayZen" />
-  <meta name="twitter:description" content="Eat, grow, don't hit your own tail. Free browser game." />
+  <meta name="twitter:title" content="Play Sandspiel Online for Free | PlayZen" />
+  <meta name="twitter:description" content="Paint with sand, water, fire, plants, and stranger elements — then watch physics take over. Free, instant, no downloads." />
   <meta name="theme-color" content="#0b1020" />
   <meta name="robots" content="index,follow" />
 
@@ -27,14 +27,14 @@
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Play Snake Online for Free",
-    "description": "Play Snake online for free in your browser. Eat, grow, don't hit your own tail.",
-    "url": "https://www.playzen.live/games/snake.html",
+    "name": "Play Sandspiel Online for Free",
+    "description": "Play Sandspiel online for free in your browser. A beautiful falling-sand physics sandbox — paint with sand, water, fire, plants and watch them interact. Instant play on PlayZen.",
+    "url": "https://www.playzen.live/games/sandspiel.html",
     "isPartOf": { "@type": "WebSite", "name": "PlayZen", "url": "https://www.playzen.live/" }
   }
   </script>
 </head>
-<body class="min-h-screen bg-slate-950 text-slate-100 antialiased" data-page="game" data-slug="snake">
+<body class="min-h-screen bg-slate-950 text-slate-100 antialiased" data-page="game" data-slug="sandspiel">
 
   <!-- Fullscreen exit overlay button (visible only when fullscreen) -->
   <button type="button" id="fullscreen-exit-btn" class="pz-fullscreen-exit" aria-label="Exit fullscreen">
@@ -66,9 +66,9 @@
     <nav class="mb-6 text-sm text-slate-400" aria-label="Breadcrumb">
       <a href="../index.html" class="hover:text-white">Home</a>
       <span class="mx-1">/</span>
-      <a href="../categories.html?cat=arcade" class="hover:text-white">Arcade</a>
+      <a href="../categories.html?cat=casual" class="hover:text-white">Casual</a>
       <span class="mx-1">/</span>
-      <span class="text-white">Snake</span>
+      <span class="text-white">Sandspiel</span>
     </nav>
 
     <div class="grid gap-8 lg:grid-cols-[1fr_300px]">
@@ -76,22 +76,22 @@
 
         <!-- Title + Favorite + Fullscreen -->
         <div class="flex flex-wrap items-center gap-4">
-          <h1 class="text-3xl font-black tracking-tight sm:text-4xl">Play Snake Online</h1>
+          <h1 class="text-3xl font-black tracking-tight sm:text-4xl">Play Sandspiel Online</h1>
           <button type="button" data-page-fav class="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-4 py-2 text-sm font-semibold text-white transition hover:bg-white/10" aria-label="Add to favorites" aria-pressed="false"></button>
           <button type="button" id="fullscreen-btn" class="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-4 py-2 text-sm font-semibold text-white transition hover:bg-white/10" aria-label="Toggle fullscreen">
             <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9m11.25-5.25v4.5m0-4.5h-4.5m4.5 0L15 9m-11.25 11.25v-4.5m0 4.5h4.5m-4.5 0L9 15m11.25 5.25v-4.5m0 4.5h-4.5m4.5 0L15 15"/></svg>
             Fullscreen
           </button>
         </div>
-        <p class="max-w-2xl text-slate-400">Eat, grow, don't hit your own tail. Free, instant, no downloads.</p>
+        <p class="max-w-2xl text-slate-400">Paint with sand, water, fire, plants, and stranger elements — then watch physics take over. Free, instant, no downloads.</p>
 
         <!-- GAME EMBED -->
         <div id="game-container" class="game-embed ring-1 ring-white/5">
           <iframe
             id="game-iframe"
             data-game-iframe
-            src="https://ramazancetinkaya.github.io/snake-game/"
-            title="Play Snake — free browser game"
+            src="https://sandspiel.club/"
+            title="Play Sandspiel — free browser game"
             loading="lazy"
             allowfullscreen
           ></iframe>
@@ -101,7 +101,7 @@
             <div class="text-4xl">🎮</div>
             <h2 class="text-xl font-bold text-white">Game embed not loaded</h2>
             <p class="max-w-sm text-sm text-slate-400">The game embed couldn't load. You can play the original version at the link below.</p>
-            <a href="https://ramazancetinkaya.github.io/snake-game/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-xl bg-indigo-500 px-5 py-3 text-sm font-semibold text-white hover:bg-indigo-400">
+            <a href="https://sandspiel.club/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-xl bg-indigo-500 px-5 py-3 text-sm font-semibold text-white hover:bg-indigo-400">
               Open Original Game
               <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"/><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"/></svg>
             </a>
@@ -152,10 +152,10 @@
 
         <!-- GAME DESCRIPTION (SEO content) -->
         <section>
-          <h2 class="text-2xl font-bold tracking-tight">What Is Snake?</h2>
+          <h2 class="text-2xl font-bold tracking-tight">What Is Sandspiel?</h2>
           <div class="prose prose-invert prose-sm mt-3 max-w-none text-slate-300 space-y-4">
-            <p>The timeless snake game. Guide your snake to eat food and grow longer, but don't run into the walls or your own tail. Simple to learn, surprisingly hard to master as your snake fills the screen.</p>
-            <p>Snake runs entirely in your browser with no downloads or signups required. It works on desktop and mobile devices. Whether you have five minutes or an hour, Snake is a perfect way to relax and challenge yourself.</p>
+            <p>Sandspiel is a mesmerizing falling-sand sandbox. Pick an element — sand, water, fire, plant, lava, acid, gas, and more — and paint it onto the canvas. Every particle is simulated: water flows, fire spreads, plants grow, ice freezes, and everything interacts.</p>
+            <p>There's no score and no way to lose; Sandspiel is pure creative play, which is exactly why it's so hard to put down. Built with WebAssembly for silky-smooth simulation, it runs beautifully in any modern browser, and you can upload and browse creations from other players.</p>
           </div>
         </section>
 
@@ -166,8 +166,9 @@
             <table class="w-full text-sm">
               <thead><tr class="border-b border-white/5 bg-white/5"><th class="px-4 py-2 text-left font-semibold text-white">Key</th><th class="px-4 py-2 text-left font-semibold text-white">Action</th></tr></thead>
               <tbody class="text-slate-300">
-                <tr class="border-b border-white/5"><td class="px-4 py-2"><kbd class="rounded bg-slate-800 px-2 py-0.5 text-xs font-mono">Arrow Keys</kbd></td><td class="px-4 py-2">Change direction</td></tr>
-                <tr class="border-b border-white/5"><td class="px-4 py-2"><kbd class="rounded bg-slate-800 px-2 py-0.5 text-xs font-mono">W A S D</kbd></td><td class="px-4 py-2">Alternative controls</td></tr>
+                <tr class="border-b border-white/5"><td class="px-4 py-2"><kbd class="rounded bg-slate-800 px-2 py-0.5 text-xs font-mono">Click / Drag</kbd></td><td class="px-4 py-2">Paint the selected element</td></tr>
+                <tr class="border-b border-white/5"><td class="px-4 py-2"><kbd class="rounded bg-slate-800 px-2 py-0.5 text-xs font-mono">Element buttons</kbd></td><td class="px-4 py-2">Choose sand, water, fire, plant, and more</td></tr>
+                <tr class="border-b border-white/5"><td class="px-4 py-2"><kbd class="rounded bg-slate-800 px-2 py-0.5 text-xs font-mono">Brush sizes</kbd></td><td class="px-4 py-2">Change how much you paint at once</td></tr>
               </tbody>
             </table>
           </div>
@@ -177,10 +178,10 @@
         <section>
           <h2 class="text-xl font-bold tracking-tight">Tips & Strategy</h2>
           <ul class="mt-3 list-disc space-y-2 pl-5 text-sm text-slate-300">
-            <li>Stay near the center of the board when your snake is short.</li>
-            <li>Create a predictable pattern — spiraling inward works well.</li>
-            <li>Never chase food into a tight corner at high speeds.</li>
-            <li>Keep your tail's path in mind to avoid self-collisions.</li>
+            <li>Start with sand and water to learn how particles flow and settle.</li>
+            <li>Plant + water + a spark of fire makes spectacular slow burns.</li>
+            <li>Wall lets you build containers before pouring in liquids.</li>
+            <li>Try dust + fire… from a safe distance.</li>
           </ul>
         </section>
 
@@ -189,16 +190,16 @@
           <h2 class="text-xl font-bold tracking-tight">Frequently Asked Questions</h2>
           <div class="mt-3 space-y-4">
             <details class="group rounded-xl border border-white/5 bg-white/5 open:bg-white/[0.07]">
-              <summary class="cursor-pointer px-5 py-3 text-sm font-semibold text-white">Is Snake free to play?</summary>
-              <p class="px-5 pb-4 text-sm text-slate-400">Yes. Snake is completely free to play in your browser with no downloads or signups required.</p>
+              <summary class="cursor-pointer px-5 py-3 text-sm font-semibold text-white">Is Sandspiel free to play?</summary>
+              <p class="px-5 pb-4 text-sm text-slate-400">Yes. Sandspiel is completely free to play in your browser with no downloads or signups required.</p>
             </details>
             <details class="group rounded-xl border border-white/5 bg-white/5 open:bg-white/[0.07]">
-              <summary class="cursor-pointer px-5 py-3 text-sm font-semibold text-white">Can I play Snake on my phone?</summary>
-              <p class="px-5 pb-4 text-sm text-slate-400">Yes. Snake works on mobile devices and tablets. Touch controls are supported.</p>
+              <summary class="cursor-pointer px-5 py-3 text-sm font-semibold text-white">Can I play Sandspiel on my phone?</summary>
+              <p class="px-5 pb-4 text-sm text-slate-400">Yes. Sandspiel works well with touch — painting elements with your finger is very satisfying.</p>
             </details>
             <details class="group rounded-xl border border-white/5 bg-white/5 open:bg-white/[0.07]">
-              <summary class="cursor-pointer px-5 py-3 text-sm font-semibold text-white">Do I need to create an account?</summary>
-              <p class="px-5 pb-4 text-sm text-slate-400">No. Just open the page and start playing instantly. No registration needed.</p>
+              <summary class="cursor-pointer px-5 py-3 text-sm font-semibold text-white">Is there a goal?</summary>
+              <p class="px-5 pb-4 text-sm text-slate-400">No — Sandspiel is an open sandbox. The fun is experimenting with how the elements interact.</p>
             </details>
           </div>
         </section>
@@ -208,13 +209,13 @@
       <aside class="space-y-6 lg:pt-16">
         <div class="rounded-xl border border-white/5 bg-slate-900/60 p-4 space-y-3">
           <h3 class="font-semibold text-white">Game Info</h3>
-          <div class="flex justify-between text-sm"><span class="text-slate-400">Category</span><a href="../categories.html?cat=arcade" class="text-indigo-400 hover:text-indigo-300">Arcade</a></div>
-          <div class="flex justify-between text-sm"><span class="text-slate-400">Rating</span><span class="text-white">4.6 / 5</span></div>
-          <div class="flex justify-between text-sm"><span class="text-slate-400">Plays</span><span class="text-white">356K+</span></div>
+          <div class="flex justify-between text-sm"><span class="text-slate-400">Category</span><a href="../categories.html?cat=casual" class="text-indigo-400 hover:text-indigo-300">Casual</a></div>
+          <div class="flex justify-between text-sm"><span class="text-slate-400">Rating</span><span class="text-white">4.7 / 5</span></div>
+          <div class="flex justify-between text-sm"><span class="text-slate-400">Plays</span><span class="text-white">158K+</span></div>
           <div class="flex justify-between text-sm"><span class="text-slate-400">Platform</span><span class="text-white">Browser</span></div>
           <div class="flex justify-between text-sm"><span class="text-slate-400">Price</span><span class="text-emerald-400">Free</span></div>
         </div>
-        <a href="../categories.html?cat=arcade" class="block rounded-xl border border-white/5 bg-white/5 p-4 text-center text-sm font-semibold text-indigo-400 hover:bg-white/10 hover:text-indigo-300">Browse more Arcade games →</a>
+        <a href="../categories.html?cat=casual" class="block rounded-xl border border-white/5 bg-white/5 p-4 text-center text-sm font-semibold text-indigo-400 hover:bg-white/10 hover:text-indigo-300">Browse more Casual games →</a>
       </aside>
     </div>
 
