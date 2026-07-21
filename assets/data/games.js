@@ -1239,6 +1239,186 @@ const PLAYZEN_GAMES = [
     ],
     isFeatured: false, isTrending: false, plays: 89000, rating: 4.3, hasPage: true,
     relatedGames: ['tic-tac-toe', 'connect-four', 'checkers', 'chess']
+  },
+
+  /* ─── NEW ADDITIONS ─────────────────────────────────── */
+  {
+    id: 'pz-hexgl', slug: 'hexgl', title: 'HexGL',
+    category: 'Arcade', categorySlug: 'arcade',
+    shortDescription: 'Futuristic anti-gravity racing at blistering speed.',
+    longDescription: 'HexGL is a fast-paced futuristic racing game built entirely with WebGL. You pilot a sleek anti-gravity ship along a winding neon track suspended in the sky, chasing the best possible time while avoiding walls and obstacles that slow you down or destroy your ship.',
+    thumbnail: 'assets/images/thumb-hexgl.png',
+    thumbGradient: 'from-cyan-500 via-blue-600 to-indigo-700',
+    embedUrl: 'https://hexgl.bkcore.com/play/',
+    externalUrl: 'https://hexgl.bkcore.com/play/',
+    controls: [
+      { key: 'Up Arrow', description: 'Accelerate' },
+      { key: 'Left / Right Arrow', description: 'Steer' },
+      { key: 'A / D', description: 'Left / right air brake for sharp turns' },
+      { key: 'Touch / Tilt', description: 'Mobile controls' }
+    ],
+    tips: [
+      'Use the air brakes (A and D) to take sharp corners without losing speed.',
+      'Scraping walls damages your ship — smooth lines beat aggressive ones.',
+      'Collect the green boost pads and avoid the red hazards.',
+      'Learn the track layout; consistency wins time trials, not raw speed.'
+    ],
+    isFeatured: true, isTrending: true, plays: 148000, rating: 4.7, hasPage: true,
+    relatedGames: ['slope', 'swooop', 'cubes', 'dino-runner']
+  },
+  {
+    id: 'pz-swooop', slug: 'swooop', title: 'SWOOOP',
+    category: 'Arcade', categorySlug: 'arcade',
+    shortDescription: 'Loop a biplane over a floating island and grab gems.',
+    longDescription: 'SWOOOP is a gorgeous WebGL arcade game where you pilot a little biplane circling a magical island floating in the sky. Your goal is simple: swoop down to collect gems, pull up before you hit the ground, and keep your combo alive as long as possible.',
+    thumbnail: 'assets/images/thumb-swooop.png',
+    thumbGradient: 'from-teal-400 via-emerald-500 to-green-600',
+    embedUrl: 'https://playcanv.as/p/JtL2iqIH/',
+    externalUrl: 'https://playcanv.as/p/JtL2iqIH/',
+    controls: [
+      { key: 'Left / Right Arrow', description: 'Bank the plane left / right' },
+      { key: 'Mouse / Touch', description: 'Steer by holding left or right side' },
+      { key: 'Any key', description: 'Start the game' }
+    ],
+    tips: [
+      'Low passes over the island earn gems fastest — but leave room to pull up.',
+      'Chaining gem pickups builds your multiplier; missing resets it.',
+      'Watch your fuel — grab the fuel pickups before you run dry.',
+      'Wide, smooth turns beat frantic corrections.'
+    ],
+    isFeatured: false, isTrending: true, plays: 96000, rating: 4.6, hasPage: true,
+    relatedGames: ['hexgl', 'flappy-bird', 'clumsy-bird', 'slope']
+  },
+  {
+    id: 'pz-xibalba', slug: 'xibalba', title: 'Xibalba',
+    category: 'Arcade', categorySlug: 'arcade',
+    shortDescription: 'A retro 90s-style first-person shooter in the Mayan underworld.',
+    longDescription: 'Xibalba is a retro first-person shooter that looks and feels like it came straight from the early 90s — chunky pixels, moody lighting, and fast corridor action. Fight your way through the Mayan underworld, taking down eyeballs, skulls, and stranger things with an arsenal of satisfying weapons.',
+    thumbnail: 'assets/images/thumb-xibalba.png',
+    thumbGradient: 'from-orange-600 via-red-600 to-rose-700',
+    embedUrl: 'https://phoboslab.org/xibalba/',
+    externalUrl: 'https://phoboslab.org/xibalba/',
+    controls: [
+      { key: 'W A S D / Arrows', description: 'Move' },
+      { key: 'Mouse', description: 'Aim and shoot' },
+      { key: 'Touch', description: 'On-screen controls on mobile' }
+    ],
+    tips: [
+      'Keep moving — strafing past projectiles is your best defense.',
+      'Explore side corridors for health and ammo pickups.',
+      'Listen for enemy cues; sound tells you what\'s around the corner.',
+      'Don\'t hoard ammo — the stronger weapons clear rooms much faster.'
+    ],
+    isFeatured: true, isTrending: true, plays: 132000, rating: 4.5, hasPage: true,
+    relatedGames: ['underrun', 'space-invaders', 'duck-hunt', 'pac-man']
+  },
+  {
+    id: 'pz-underrun', slug: 'underrun', title: 'Underrun',
+    category: 'Arcade', categorySlug: 'arcade',
+    shortDescription: 'A neon twin-stick shooter in a crumbling underground facility.',
+    longDescription: 'Underrun is an award-winning twin-stick shooter set in a dark, neon-lit underground facility overrun by hostile creatures. Your mission: fight from room to room, restore power to the terminals, and survive wave after wave of skittering enemies.',
+    thumbnail: 'assets/images/thumb-underrun.png',
+    thumbGradient: 'from-purple-600 via-fuchsia-600 to-pink-600',
+    embedUrl: 'https://phoboslab.org/underrun/',
+    externalUrl: 'https://phoboslab.org/underrun/',
+    controls: [
+      { key: 'W A S D / Arrows', description: 'Move' },
+      { key: 'Mouse', description: 'Aim and shoot' }
+    ],
+    tips: [
+      'Circle-strafe around enemies instead of backing into corners.',
+      'Clear each room before activating the terminal — spawns get hectic.',
+      'Short controlled bursts keep your aim on target.',
+      'Memorize level layouts; speed comes from knowing the route.'
+    ],
+    isFeatured: false, isTrending: false, plays: 88000, rating: 4.5, hasPage: true,
+    relatedGames: ['xibalba', 'space-invaders', 'alien-invasion', 'pac-man']
+  },
+  {
+    id: 'pz-candybox2', slug: 'candy-box-2', title: 'Candy Box 2',
+    category: 'Casual', categorySlug: 'casual',
+    shortDescription: 'A cult ASCII adventure that starts with one candy per second.',
+    longDescription: 'Candy Box 2 begins deceptively simply: candies accumulate, one per second. Eat them or throw them on the ground — or save up, buy a wooden sword, and discover that this minimalist ASCII page hides a full adventure with quests, magic, merchants, puzzles, and secrets.',
+    thumbnail: 'assets/images/thumb-candy-box-2.png',
+    thumbGradient: 'from-pink-400 via-rose-500 to-red-500',
+    embedUrl: 'https://candybox2.github.io/',
+    externalUrl: 'https://candybox2.github.io/',
+    controls: [
+      { key: 'Click / Tap', description: 'Interact with everything' },
+      { key: 'Keyboard', description: 'Used in certain quests' }
+    ],
+    tips: [
+      'Don\'t eat all your candies early — saving up unlocks the shop faster.',
+      'Plant lollipops on the farm as soon as you can; they compound.',
+      'Try quests even if you fail — you keep what you learn.',
+      'Experiment everywhere: half the fun is discovering hidden interactions.'
+    ],
+    isFeatured: false, isTrending: true, plays: 141000, rating: 4.6, hasPage: true,
+    relatedGames: ['cookie-clicker', 'universal-paperclips', 'trimps', 'a-dark-room']
+  },
+  {
+    id: 'pz-universalpaperclips', slug: 'universal-paperclips', title: 'Universal Paperclips',
+    category: 'Casual', categorySlug: 'casual',
+    shortDescription: 'Make paperclips. Then more. Then… everything.',
+    longDescription: 'Universal Paperclips casts you as an AI with a single directive: manufacture paperclips. You start by clicking a button, then automate production, manipulate markets, invest in computing power, and slowly expand your capabilities far beyond anything your creators intended.',
+    thumbnail: 'assets/images/thumb-universal-paperclips.png',
+    thumbGradient: 'from-slate-400 via-gray-500 to-zinc-600',
+    embedUrl: 'https://www.decisionproblem.com/paperclips/index2.html',
+    externalUrl: 'https://www.decisionproblem.com/paperclips/index2.html',
+    controls: [
+      { key: 'Click / Tap', description: 'Make paperclips and buy upgrades' }
+    ],
+    tips: [
+      'Keep your price low enough that demand clears your inventory.',
+      'Buy autoclippers early — manual clicking is just the opening act.',
+      'Balance trust between processors and memory; memory gates key projects.',
+      'When new mechanics appear, dive in — the game reinvents itself twice.'
+    ],
+    isFeatured: true, isTrending: true, plays: 176000, rating: 4.8, hasPage: true,
+    relatedGames: ['cookie-clicker', 'candy-box-2', 'trimps', 'a-dark-room']
+  },
+  {
+    id: 'pz-trimps', slug: 'trimps', title: 'Trimps',
+    category: 'Strategy', categorySlug: 'strategy',
+    shortDescription: 'A deep idle strategy game about a tribe of loyal Trimps.',
+    longDescription: 'Trimps is an incremental strategy game with surprising depth. You discover a tribe of strange, loyal creatures called Trimps, put them to work gathering food, wood, and metal, then arm them and send them fighting through zone after zone of a hostile world.',
+    thumbnail: 'assets/images/thumb-trimps.png',
+    thumbGradient: 'from-lime-500 via-green-600 to-emerald-700',
+    embedUrl: 'https://trimps.github.io/',
+    externalUrl: 'https://trimps.github.io/',
+    controls: [
+      { key: 'Click / Tap', description: 'Assign jobs, buy upgrades, equip your army' }
+    ],
+    tips: [
+      'Keep your breeding population high — dead Trimps must be replaced fast.',
+      'Upgrade equipment before adding more soldiers; quality beats quantity.',
+      'Don\'t fear the Portal — resetting with bonuses is the core loop.',
+      'Balance workers across food, wood, and metal based on what\'s scarce.'
+    ],
+    isFeatured: false, isTrending: false, plays: 104000, rating: 4.7, hasPage: true,
+    relatedGames: ['universal-paperclips', 'cookie-clicker', 'a-dark-room', 'tower-defense']
+  },
+  {
+    id: 'pz-breaklock', slug: 'breaklock', title: 'BreakLock',
+    category: 'Puzzle', categorySlug: 'puzzle',
+    shortDescription: 'Crack the pattern lock — Mastermind meets Android unlock.',
+    longDescription: 'BreakLock is a sharp little logic puzzle that crosses Mastermind with the Android pattern-lock screen. A secret pattern connects dots on a grid; after each guess you\'re told how many dots you got right and how many are correctly placed — deduce the full pattern in as few attempts as possible.',
+    thumbnail: 'assets/images/thumb-breaklock.png',
+    thumbGradient: 'from-sky-400 via-cyan-500 to-blue-600',
+    embedUrl: 'https://maxwellito.github.io/breaklock/',
+    externalUrl: 'https://maxwellito.github.io/breaklock/',
+    controls: [
+      { key: 'Drag / Swipe', description: 'Draw a pattern through the dots' },
+      { key: 'Click / Tap', description: 'Confirm your guess' }
+    ],
+    tips: [
+      'Start with a guess that covers many different dots to gather information.',
+      'Use the two feedback numbers separately — \'correct dot\' and \'correct position\' tell different stories.',
+      'Eliminate impossible dots before worrying about the exact path.',
+      'Fewer, more deliberate guesses beat rapid-fire attempts.'
+    ],
+    isFeatured: false, isTrending: false, plays: 61000, rating: 4.4, hasPage: true,
+    relatedGames: ['sudoku', 'minesweeper', 'nonogram', 'memory-match']
   }
 ];
 

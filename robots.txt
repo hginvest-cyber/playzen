@@ -1,5 +1,4 @@
 # PlayZen — robots.txt
-# REPLACE playzen.live with your actual domain before launch
 
 User-agent: *
 Allow: /

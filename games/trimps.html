@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Play Trimps Online for Free | PlayZen</title>
+  <meta name="description" content="Play Trimps online for free in your browser. A deep incremental strategy game — manage your tribe, gear them up, and push through hostile zones. Instant play on PlayZen." />
+  <link rel="canonical" href="https://www.playzen.live/games/trimps.html" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Play Trimps Online for Free | PlayZen" />
+  <meta property="og:description" content="Gather resources, breed Trimps, and battle across a hostile world in this deep idle strategy game. Free, instant, no downloads." />
+  <meta property="og:url" content="https://www.playzen.live/games/trimps.html" />
+  <meta property="og:image" content="https://www.playzen.live/assets/images/og-trimps.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Play Trimps Online for Free | PlayZen" />
+  <meta name="twitter:description" content="Gather resources, breed Trimps, and battle across a hostile world in this deep idle strategy game. Free, instant, no downloads." />
+  <meta name="theme-color" content="#0b1020" />
+  <meta name="robots" content="index,follow" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={darkMode:'class',theme:{extend:{fontFamily:{sans:['system-ui','-apple-system','Segoe UI','Roboto','Inter','sans-serif']}}}}</script>
+  <link rel="stylesheet" href="../assets/css/custom.css" />
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2844527705842952" crossorigin="anonymous"></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Play Trimps Online for Free",
+    "description": "Play Trimps online for free in your browser. A deep incremental strategy game — manage your tribe, gear them up, and push through hostile zones. Instant play on PlayZen.",
+    "url": "https://www.playzen.live/games/trimps.html",
+    "isPartOf": { "@type": "WebSite", "name": "PlayZen", "url": "https://www.playzen.live/" }
+  }
+  </script>
+</head>
+<body class="min-h-screen bg-slate-950 text-slate-100 antialiased" data-page="game" data-slug="trimps">
+
+  <!-- Fullscreen exit overlay button (visible only when fullscreen) -->
+  <button type="button" id="fullscreen-exit-btn" class="pz-fullscreen-exit" aria-label="Exit fullscreen">
+    <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 9V4.5M9 9H4.5M9 9L3.75 3.75M9 15v4.5M9 15H4.5M9 15l-5.25 5.25M15 9h4.5M15 9V4.5M15 9l5.25-5.25M15 15h4.5M15 15v4.5m0-4.5l5.25 5.25"/></svg>
+    Exit Fullscreen
+  </button>
+
+  <!-- HEADER -->
+  <header class="sticky top-0 z-30 border-b border-white/5 bg-slate-950/80 backdrop-blur-lg">
+    <div class="mx-auto flex max-w-7xl items-center gap-4 px-4 py-3 sm:px-6 lg:px-8">
+      <a href="../index.html" class="flex items-center gap-2"><span class="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-indigo-500 to-fuchsia-500 text-lg font-black">P</span><span class="text-lg font-bold tracking-tight">PlayZen</span></a>
+      <nav class="ml-6 hidden items-center gap-6 text-sm font-medium text-slate-300 md:flex"><a href="../index.html" class="hover:text-white">Home</a><a href="../trending.html" class="hover:text-white">Trending</a><a href="../categories.html" class="hover:text-white">Categories</a><a href="../favorites.html" class="hover:text-white">Favorites</a></nav>
+      <div class="relative ml-auto w-full max-w-sm">
+        <label class="sr-only" for="pz-search-game">Search games</label>
+        <div class="relative">
+          <svg class="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-500" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"/></svg>
+          <input id="pz-search-game" data-search-input type="search" placeholder="Search games…" autocomplete="off" class="w-full rounded-xl border border-white/5 bg-slate-900/80 py-2 pl-9 pr-3 text-sm text-white placeholder-slate-500 focus:border-indigo-400/60 focus:outline-none" />
+        </div>
+        <div data-search-results class="absolute left-0 right-0 top-[calc(100%+6px)] z-40 hidden max-h-[70vh] overflow-y-auto rounded-xl border border-white/5 bg-slate-900/95 shadow-2xl ring-1 ring-black/20 backdrop-blur"></div>
+      </div>
+      <button type="button" data-mobile-toggle aria-expanded="false" aria-label="Toggle navigation" class="ml-2 inline-flex h-10 w-10 items-center justify-center rounded-lg border border-white/10 text-slate-300 md:hidden"><svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 5h14a1 1 0 010 2H3a1 1 0 010-2zm0 4h14a1 1 0 010 2H3a1 1 0 010-2zm0 4h14a1 1 0 010 2H3a1 1 0 010-2z" clip-rule="evenodd"/></svg></button>
+    </div>
+    <nav data-mobile-menu class="hidden border-t border-white/5 bg-slate-950/95 md:hidden"><div class="flex flex-col gap-1 px-4 py-3 text-sm"><a href="../index.html" class="rounded-md px-3 py-2 hover:bg-white/5">Home</a><a href="../trending.html" class="rounded-md px-3 py-2 hover:bg-white/5">Trending</a><a href="../categories.html" class="rounded-md px-3 py-2 hover:bg-white/5">Categories</a><a href="../favorites.html" class="rounded-md px-3 py-2 hover:bg-white/5">Favorites</a><a href="../continue-playing.html" class="rounded-md px-3 py-2 hover:bg-white/5">Continue Playing</a></div></nav>
+  </header>
+
+  <main class="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
+
+    <!-- Breadcrumb -->
+    <nav class="mb-6 text-sm text-slate-400" aria-label="Breadcrumb">
+      <a href="../index.html" class="hover:text-white">Home</a>
+      <span class="mx-1">/</span>
+      <a href="../categories.html?cat=strategy" class="hover:text-white">Strategy</a>
+      <span class="mx-1">/</span>
+      <span class="text-white">Trimps</span>
+    </nav>
+
+    <div class="grid gap-8 lg:grid-cols-[1fr_300px]">
+      <div class="space-y-10">
+
+        <!-- Title + Favorite + Fullscreen -->
+        <div class="flex flex-wrap items-center gap-4">
+          <h1 class="text-3xl font-black tracking-tight sm:text-4xl">Play Trimps Online</h1>
+          <button type="button" data-page-fav class="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-4 py-2 text-sm font-semibold text-white transition hover:bg-white/10" aria-label="Add to favorites" aria-pressed="false"></button>
+          <button type="button" id="fullscreen-btn" class="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-4 py-2 text-sm font-semibold text-white transition hover:bg-white/10" aria-label="Toggle fullscreen">
+            <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9m11.25-5.25v4.5m0-4.5h-4.5m4.5 0L15 9m-11.25 11.25v-4.5m0 4.5h4.5m-4.5 0L9 15m11.25 5.25v-4.5m0 4.5h-4.5m4.5 0L15 15"/></svg>
+            Fullscreen
+          </button>
+        </div>
+        <p class="max-w-2xl text-slate-400">Gather resources, breed Trimps, and battle across a hostile world in this deep idle strategy game. Free, instant, no downloads.</p>
+
+        <!-- GAME EMBED -->
+        <div id="game-container" class="game-embed ring-1 ring-white/5">
+          <iframe
+            id="game-iframe"
+            data-game-iframe
+            src="https://trimps.github.io/"
+            title="Play Trimps — free browser game"
+            loading="lazy"
+            allowfullscreen
+          ></iframe>
+
+          <!-- Fallback if embed doesn't load -->
+          <div data-game-fallback class="hidden absolute inset-0 flex flex-col items-center justify-center gap-4 bg-slate-950/95 text-center">
+            <div class="text-4xl">🎮</div>
+            <h2 class="text-xl font-bold text-white">Game embed not loaded</h2>
+            <p class="max-w-sm text-sm text-slate-400">The game embed couldn't load. You can play the original version at the link below.</p>
+            <a href="https://trimps.github.io/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-xl bg-indigo-500 px-5 py-3 text-sm font-semibold text-white hover:bg-indigo-400">
+              Open Original Game
+              <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"/><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <script>
+          (function() {
+            var btn = document.getElementById('fullscreen-btn');
+            var exitBtn = document.getElementById('fullscreen-exit-btn');
+            var container = document.getElementById('game-container');
+            var isFs = false;
+
+            function enterFullscreen() {
+              isFs = true;
+              container.classList.add('pz-fullscreen');
+              exitBtn.classList.add('pz-visible');
+              document.body.classList.add('pz-no-scroll');
+              btn.innerHTML = '<svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 9V4.5M9 9H4.5M9 9L3.75 3.75M9 15v4.5M9 15H4.5M9 15l-5.25 5.25M15 9h4.5M15 9V4.5M15 9l5.25-5.25M15 15h4.5M15 15v4.5m0-4.5l5.25 5.25"/></svg> Exit Fullscreen';
+            }
+
+            function exitFullscreen() {
+              isFs = false;
+              container.classList.remove('pz-fullscreen');
+              exitBtn.classList.remove('pz-visible');
+              document.body.classList.remove('pz-no-scroll');
+              btn.innerHTML = '<svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9m11.25-5.25v4.5m0-4.5h-4.5m4.5 0L15 9m-11.25 11.25v-4.5m0 4.5h4.5m-4.5 0L9 15m11.25 5.25v-4.5m0 4.5h-4.5m4.5 0L15 15"/></svg> Fullscreen';
+            }
+
+            function toggleFullscreen() {
+              if (isFs) { exitFullscreen(); } else { enterFullscreen(); }
+            }
+
+            btn.addEventListener('click', toggleFullscreen);
+            exitBtn.addEventListener('click', toggleFullscreen);
+
+            // Also exit on Escape key
+            document.addEventListener('keydown', function(e) {
+              if (e.key === 'Escape' && isFs) { exitFullscreen(); }
+            });
+          })();
+        </script>
+
+        <!-- Disclaimer -->
+        <div class="rounded-xl border border-white/10 bg-white/5 p-4 text-xs text-slate-400">
+          <strong class="text-slate-300">Disclaimer:</strong> This game is embedded from a third-party source and remains the intellectual property of its original creator. PlayZen does not host or modify game files. If you are the rights holder and have concerns, please visit our <a href="../dmca.html" class="text-indigo-400 hover:text-indigo-300">DMCA / Copyright page</a>.
+        </div>
+
+        <!-- GAME DESCRIPTION (SEO content) -->
+        <section>
+          <h2 class="text-2xl font-bold tracking-tight">What Is Trimps?</h2>
+          <div class="prose prose-invert prose-sm mt-3 max-w-none text-slate-300 space-y-4">
+            <p>Trimps is an incremental strategy game with surprising depth. You discover a tribe of strange, loyal creatures called Trimps, put them to work gathering food, wood, and metal, then arm them and send them fighting through zone after zone of a hostile world.</p>
+            <p>Under the simple interface is one of the most respected idle games ever made, with prestige layers, build choices, and progression systems that stay interesting for weeks. It runs quietly in a browser tab and your progress persists between sessions.</p>
+          </div>
+        </section>
+
+        <!-- CONTROLS -->
+        <section>
+          <h2 class="text-xl font-bold tracking-tight">Controls</h2>
+          <div class="mt-3 overflow-hidden rounded-xl border border-white/5">
+            <table class="w-full text-sm">
+              <thead><tr class="border-b border-white/5 bg-white/5"><th class="px-4 py-2 text-left font-semibold text-white">Key</th><th class="px-4 py-2 text-left font-semibold text-white">Action</th></tr></thead>
+              <tbody class="text-slate-300">
+                <tr class="border-b border-white/5"><td class="px-4 py-2"><kbd class="rounded bg-slate-800 px-2 py-0.5 text-xs font-mono">Click / Tap</kbd></td><td class="px-4 py-2">Assign jobs, buy upgrades, equip your army</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- TIPS -->
+        <section>
+          <h2 class="text-xl font-bold tracking-tight">Tips & Strategy</h2>
+          <ul class="mt-3 list-disc space-y-2 pl-5 text-sm text-slate-300">
+            <li>Keep your breeding population high — dead Trimps must be replaced fast.</li>
+            <li>Upgrade equipment before adding more soldiers; quality beats quantity.</li>
+            <li>Don't fear the Portal — resetting with bonuses is the core loop.</li>
+            <li>Balance workers across food, wood, and metal based on what's scarce.</li>
+          </ul>
+        </section>
+
+        <!-- FAQ -->
+        <section>
+          <h2 class="text-xl font-bold tracking-tight">Frequently Asked Questions</h2>
+          <div class="mt-3 space-y-4">
+            <details class="group rounded-xl border border-white/5 bg-white/5 open:bg-white/[0.07]">
+              <summary class="cursor-pointer px-5 py-3 text-sm font-semibold text-white">Is Trimps free to play?</summary>
+              <p class="px-5 pb-4 text-sm text-slate-400">Yes. Trimps is completely free to play in your browser with no downloads or signups required.</p>
+            </details>
+            <details class="group rounded-xl border border-white/5 bg-white/5 open:bg-white/[0.07]">
+              <summary class="cursor-pointer px-5 py-3 text-sm font-semibold text-white">Can I play Trimps on my phone?</summary>
+              <p class="px-5 pb-4 text-sm text-slate-400">Yes. Trimps works in mobile browsers, though the dense interface is easier to read on a bigger screen.</p>
+            </details>
+            <details class="group rounded-xl border border-white/5 bg-white/5 open:bg-white/[0.07]">
+              <summary class="cursor-pointer px-5 py-3 text-sm font-semibold text-white">Does my progress save?</summary>
+              <p class="px-5 pb-4 text-sm text-slate-400">Yes. Trimps saves automatically in your browser, and you can export your save from the settings menu.</p>
+            </details>
+          </div>
+        </section>
+      </div>
+
+      <!-- SIDEBAR -->
+      <aside class="space-y-6 lg:pt-16">
+        <div class="rounded-xl border border-white/5 bg-slate-900/60 p-4 space-y-3">
+          <h3 class="font-semibold text-white">Game Info</h3>
+          <div class="flex justify-between text-sm"><span class="text-slate-400">Category</span><a href="../categories.html?cat=strategy" class="text-indigo-400 hover:text-indigo-300">Strategy</a></div>
+          <div class="flex justify-between text-sm"><span class="text-slate-400">Rating</span><span class="text-white">4.7 / 5</span></div>
+          <div class="flex justify-between text-sm"><span class="text-slate-400">Plays</span><span class="text-white">104K+</span></div>
+          <div class="flex justify-between text-sm"><span class="text-slate-400">Platform</span><span class="text-white">Browser</span></div>
+          <div class="flex justify-between text-sm"><span class="text-slate-400">Price</span><span class="text-emerald-400">Free</span></div>
+        </div>
+        <a href="../categories.html?cat=strategy" class="block rounded-xl border border-white/5 bg-white/5 p-4 text-center text-sm font-semibold text-indigo-400 hover:bg-white/10 hover:text-indigo-300">Browse more Strategy games →</a>
+      </aside>
+    </div>
+
+    <!-- RELATED GAMES -->
+    <section class="mt-14">
+      <h2 class="mb-5 text-2xl font-bold tracking-tight">You Might Also Like</h2>
+      <div data-grid="related" class="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4"></div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-white/5 bg-slate-950"><div class="mx-auto grid max-w-7xl grid-cols-2 gap-8 px-4 py-12 sm:px-6 md:grid-cols-4 lg:px-8"><div class="col-span-2"><div class="flex items-center gap-2"><span class="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-indigo-500 to-fuchsia-500 font-black">P</span><span class="text-lg font-bold">PlayZen</span></div><p class="mt-3 max-w-sm text-sm text-slate-400">Free browser games. No downloads. Just play.</p></div><div><h3 class="text-sm font-semibold text-white">Explore</h3><ul class="mt-3 space-y-2 text-sm text-slate-400"><li><a href="../trending.html" class="hover:text-white">Trending</a></li><li><a href="../categories.html" class="hover:text-white">Categories</a></li><li><a href="../favorites.html" class="hover:text-white">Favorites</a></li></ul></div><div><h3 class="text-sm font-semibold text-white">Legal & Info</h3><ul class="mt-3 space-y-2 text-sm text-slate-400"><li><a href="../about.html" class="hover:text-white">About</a></li><li><a href="../contact.html" class="hover:text-white">Contact</a></li><li><a href="../privacy.html" class="hover:text-white">Privacy Policy</a></li><li><a href="../terms.html" class="hover:text-white">Terms of Use</a></li><li><a href="../dmca.html" class="hover:text-white">DMCA / Copyright</a></li></ul></div></div><div class="border-t border-white/5"><div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 px-4 py-6 text-xs text-slate-500 sm:flex-row sm:px-6 lg:px-8"><p>© <span data-year></span> PlayZen. Games are property of their respective owners.</p><p>Made for casual players. Family-friendly. Ad-supported.</p></div></div></footer>
+
+  <script src="../assets/data/games.js"></script>
+  <script src="../assets/js/storage.js"></script>
+  <script src="../assets/js/search.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/game-page.js"></script>
+</body>
+</html>
